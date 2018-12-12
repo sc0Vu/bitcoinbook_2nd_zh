@@ -1,7 +1,8 @@
-### [《精通比特幣（第二版）-- 區塊鏈編程》](https://bitcoinbook.info/) 中文版
-### [Mastering Bitcoin 2nd Edition - Programming the Open Blockchain]( https://bitcoinbook.info/ ) in Chinese (Simplified)
+# Mastering Bitcoin 2nd Edition - 繁中
 
-![Mastering Bitcoin 2nd Edition](images/cover.png)
+<center>
+<img src="https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png" width="50%" height="50%" />
+</center>
 
 本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。
 
@@ -35,12 +36,5 @@
 
 [第十二章 區塊鏈應用](第十二章.asciidoc)
 
-### 原書購買鏈接：
-[Amazon](https://www.amazon.com/Mastering-Bitcoin-Programming-Open-Blockchain/dp/1491954388)
-
-### 關於譯者
-互聯網從業者，對經濟學感興趣，很早加入數字貨幣和區塊鏈研究。
-
-閒暇時間翻譯，歡迎指正，感謝加星~
 
 [下一章：前言](前言.asciidoc)
