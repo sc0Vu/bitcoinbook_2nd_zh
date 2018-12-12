@@ -1,3 +1,9 @@
+---
+title: Mastering Bitcoin 2nd Edition - 繁中
+image: https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png
+tags: Mastering Bitcoin 2nd Edition
+---
+
 # Mastering Bitcoin 2nd Edition - 繁中
 ![](https://img.shields.io/badge/Language-Traditional%20Chinese-orange.svg)
 ![https://github.com/aantonop](https://img.shields.io/badge/Author-aantonop-yellowgreen.svg)
