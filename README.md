@@ -1,7 +1,7 @@
 # Mastering Bitcoin 2nd Edition - 繁中
 
 <center>
-<img src="https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png" width="50%" height="50%" />
+<img src="https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png" width="30%" height="30%" />
 </center>
 
 本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。
