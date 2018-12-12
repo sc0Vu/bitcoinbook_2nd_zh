@@ -386,4 +386,4 @@ $ bitcoin-cli -regtest getbalance
 
 你可以使用测试区块链建立开发管道。开发时，在 +regtest+ 上本地测试你的代码。一旦准备好在公共网络上尝试它，切换到 +testnet+ 以将代码暴露于有多种的代码和应用的，更具动态性的环境中。最后，一旦你确信自己的代码能够按预期工作，请切换到 +mainnet+ 以在生产环境中进行部署。当你进行更改，改进，错误修复等时，请再次启动管道，首先是 +regtest+，然后是 +testnet+，最后部署到生产环境中。
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

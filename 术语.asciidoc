@@ -254,4 +254,4 @@ SHA::
 
 <<第一章#,下一章：概述>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

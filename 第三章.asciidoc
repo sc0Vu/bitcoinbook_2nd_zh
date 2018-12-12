@@ -795,4 +795,4 @@ https://github.com/oleganza/CoreBitcoin[CoreBitcoin]:: 为ObjC和Swift提供的�
 
 <<第四章#,下一章：密钥与地址>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

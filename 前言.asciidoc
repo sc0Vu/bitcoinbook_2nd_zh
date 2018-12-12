@@ -30,5 +30,3 @@
 就像蚂蚁群落一样，比特币网络是一个由简单的节点组成的弹性网络，遵循简单的规则，这些节点在没有任何集中协调的情况下可以一起完成令人惊叹的事情。((("", startref="BCbasicbenefits0")))
 
 <<术语#,下一章：术语>>
-
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]

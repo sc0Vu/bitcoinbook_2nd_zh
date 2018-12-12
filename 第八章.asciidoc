@@ -339,4 +339,4 @@ BIP-150和BIP-151允许用户使用加密和身份验证来运行连接到可信
 
 <<第九章#,下一章：区块链>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

@@ -841,4 +841,4 @@ image::images/mbc2_0412.png[]
 
 <<第五章#,下一章：钱包>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

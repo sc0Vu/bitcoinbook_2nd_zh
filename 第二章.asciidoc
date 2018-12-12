@@ -285,4 +285,4 @@ image::images/mbc2_0210.png["Alice's transaction as part of a transaction chain"
 
 <<第三章#,下一章：Bitcoin Core参考实现>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

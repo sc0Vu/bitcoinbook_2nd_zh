@@ -738,4 +738,4 @@ image::images/mbc2_0608.png["The balance of Bob's bitcoin address"]
 
 <<第七章#,上一章：高级交易与脚本>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

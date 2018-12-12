@@ -1048,4 +1048,4 @@ CPU :: 每笔交易都必须被验证，这需要CPU时间。
 
 <<第八章#,下一章：比特币网络>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+

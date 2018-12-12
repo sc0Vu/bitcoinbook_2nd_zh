@@ -1123,4 +1123,4 @@ BIP-9 首先用于激活 +CHECKSEQUENCEVERIFY+ 和相关的 BIP（68,112,113）�
 
 <<第十一章#,下一章：比特币安全>>
 
-image::images/thanks.jpeg["赞赏译者",height=400,align="center"]
+
