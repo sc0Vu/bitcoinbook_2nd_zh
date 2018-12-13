@@ -5,7 +5,7 @@
 ![https://github.com/ChenPoWei](https://img.shields.io/badge/Translator-Chen%20Po%20Wei-blue.svg)    
 
 <center>
-<img src="https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png" width="30%" height="30%" />
+<img src="https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png" width="40%" height="40%" />
 </center>
 
 本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。
