@@ -149,7 +149,7 @@ OP_RETURN::
 OP_RETURN 交易::
     一種交易類型，它將任意數據添加到可證明不可消費的pubkey腳本中，完整節點不需要儲存在其UTXO資料庫中。不要與OP_RETURN操作碼混淆。
 
-孤塊（orphan block）::
+孤兒塊（orphan block）::
     其父區塊還未被本地節點驗證的塊，所以它們也不能被完全驗證。不要和陳腐區塊（stale block）混淆
 
 孤兒交易（orphan transactions）::
