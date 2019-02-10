@@ -69,7 +69,7 @@ image::images/mbc2_0401.png["privk_to_pubK_to_addressA"]
 
 [WARNING]
 ====
-((("random numbers", "random number generation")))((("entropy", "random number generation")))不要自己編寫程式碼或使用你的編程語言提供的“簡單”隨機數生成器來創建一個隨機數。使用密碼學安全的偽隨機數生成器（CSPRNG）和來自足夠熵源的種子。研究你選擇的隨機數生成器庫的文檔，以確保其是密碼學安全的。正確實施CSPRNG對於密鑰的安全至關重要。
+((("random numbers", "random number generation")))((("entropy", "random number generation")))不要自己編寫程式碼或使用你的程式語言提供的“簡單”隨機數生成器來創建一個隨機數。使用密碼學安全的偽隨機數生成器（CSPRNG）和來自足夠熵源的種子。研究你選擇的隨機數生成器庫的文檔，以確保其是密碼學安全的。正確實施CSPRNG對於密鑰的安全至關重要。
 ====
 
 以下是以十六進制格式顯示的隨機生成的私鑰（k）（256位，顯示為64個十六進制數字，每個4位）：

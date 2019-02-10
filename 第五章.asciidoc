@@ -287,7 +287,7 @@ BIP-39中沒有 “錯誤的” 口令。每個密碼都會導致一些錢包，
 
 ===== 使用助記詞
 
-BIP-39有許多不同的編程語言庫實現：
+BIP-39有許多不同的程式語言庫實現：
 
 https://github.com/trezor/python-mnemonic[python-mnemonic]:: 提出BIP-39標準的SatoshiLabs團隊用Python寫的參考實現
 

@@ -313,7 +313,7 @@ $ bitcoin-cli -testnet getblockchaininfo
   [...]
 ----
 
-你還可以使用其他完整節點實現（如 +btcd+（用Go編寫）和 +bcoin+（用JavaScript編寫））在testnet3上運行，以便在其他編程語言和框架中進行實驗和學習。
+你還可以使用其他完整節點實現（如 +btcd+（用Go編寫）和 +bcoin+（用JavaScript編寫））在testnet3上運行，以便在其他程式語言和框架中進行實驗和學習。
 
 2017年初，testnet3支持了mainnet的所有功能，包括隔離見證（參見 <<segwit>>）。因此，testnet3也可以用來測試隔離見證功能。
 

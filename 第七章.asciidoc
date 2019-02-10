@@ -435,7 +435,7 @@ Median-Time-Past 在 https://github.com/bitcoin/bips/blob/master/bip-0113.mediaw
 
 乍一看，你可能會對比特幣的流程控制腳本感到困惑。這是因為比特幣腳本是一種堆棧語言。 +1 AND 1+ 逆序表示為 +1 1 ADD+。
 
-在大多數傳統（過程式）編程語言中，流程控制看起來是這樣的：
+在大多數傳統（過程式）程式語言中，流程控制看起來是這樣的：
 
 .Pseudocode of flow control in most programming languages
 ----

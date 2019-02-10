@@ -495,7 +495,7 @@ $ bitcoin-cli getnetworkinfo
 
 ----
 
-數據通過JSON格式返回,可以被所有編程語言處理，而且是可讀的。在這些數據中，我們可以看到比特幣軟體客戶端版本號（150000）和比特幣協議版本號（70015），當前的連接數（8），以及有關比特幣網路的各種訊息與此客戶端相關的設置。
+數據通過JSON格式返回,可以被所有程式語言處理，而且是可讀的。在這些數據中，我們可以看到比特幣軟體客戶端版本號（150000）和比特幣協議版本號（70015），當前的連接數（8），以及有關比特幣網路的各種訊息與此客戶端相關的設置。
 
 [TIP]
 ====
@@ -682,7 +682,7 @@ $ curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "met
 
 你可以正在自己的程序中使用HTTP庫來實現JSON-RPC調用，類似於前面的 +curl+ 示例。
 
-然而，大多數編程語言都有一些“包裝”了比特幣核心API的庫，簡便很多。我們將使用 +python-bitcoinlib+ 庫來簡化API訪問。你需要有一個正在運行的Bitcoin Core實例，用於進行JSON-RPC調用。
+然而，大多數程式語言都有一些“包裝”了比特幣核心API的庫，簡便很多。我們將使用 +python-bitcoinlib+ 庫來簡化API訪問。你需要有一個正在運行的Bitcoin Core實例，用於進行JSON-RPC調用。
 
 <<rpc_example>> 中的Python腳本調用 +getblockchaininfo+ 並打印返回數據中的區塊個數。
 
@@ -749,7 +749,7 @@ $ python rpc_block.py
 [[alt_libraries]]
 === 可選的客戶端、程序庫和工具包
 
-((("Bitcoin Core", "alternatives to", id="BCalt03")))((("clients, libraries, and toolkits", id="clients03")))((("libraries, clients, and toolkits", id="librar03")))((("toolkits, libraries, and clients", id="toolkit03")))((("third-party API clients", id="thirdpart03")))比特幣生態系統中有許多可選的客戶端，程序庫和工具包，甚至是完整節點的實現。它們以各種編程語言實現，為開發者提供其首選編程語言的原生接口。
+((("Bitcoin Core", "alternatives to", id="BCalt03")))((("clients, libraries, and toolkits", id="clients03")))((("libraries, clients, and toolkits", id="librar03")))((("toolkits, libraries, and clients", id="toolkit03")))((("third-party API clients", id="thirdpart03")))比特幣生態系統中有許多可選的客戶端，程序庫和工具包，甚至是完整節點的實現。它們以各種程式語言實現，為開發者提供其首選程式語言的原生接口。
 
 下面列出了一些：
 
@@ -791,7 +791,7 @@ https://github.com/MetacoSA/NBitcoin[NBitcoin]:: .NET框架的綜合比特幣庫
 ==== Objective-C
 https://github.com/oleganza/CoreBitcoin[CoreBitcoin]:: 為ObjC和Swift提供的比特幣工具包
 
-還有各種編程語言的庫存在，還有更多的庫在開發。((("", startref="BCalt03")))((("", startref="clients03")))((("", startref="thirdpart03")))((("", startref="toolkit03")))((("", startref="librar03")))
+還有各種程式語言的庫存在，還有更多的庫在開發。((("", startref="BCalt03")))((("", startref="clients03")))((("", startref="thirdpart03")))((("", startref="toolkit03")))((("", startref="librar03")))
 
 <<第四章#,下一章：密鑰與地址>>
 
