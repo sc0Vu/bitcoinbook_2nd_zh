@@ -135,7 +135,7 @@ image::images/mbc2_0208.png["Alice Coffee Transaction"]
 |Size| Field | Description
 | 8 字節 (小端序） | 數量 Amount  | 以聰（satoshis = 10^-8^ bitcoin) 為單位的比特幣價值
 | 1——9 字節 (VarInt) | 鎖定腳本的大小 Locking-Script Size | 後面的鎖定腳本的字節數
-| 變量 | 鎖定腳本 Locking-Script | 定義花費該輸出的條件的腳本
+| 變數 | 鎖定腳本 Locking-Script | 定義花費該輸出的條件的腳本
 |=======
 
 大多數比特幣庫和框架在內部不以字節流的形式儲存交易，因為每次需要訪問單個欄位時都需要進行復雜的解析。為了方便和易讀，比特幣庫在資料結構（通常是物件導向的結構）中儲存交易。
@@ -245,7 +245,7 @@ image::images/mbc2_0208.png["Alice Coffee Transaction"]
 | 32 字節 | 交易的雜湊值 Transaction Hash | 指向包含要花費的UTXO的交易的指針
 | 4 字節 | 輸出的索引 Output Index | 要花費的UTXO的索引，從0開始
 | 1——9 字節 (VarInt) | 解鎖腳本的大小 Unlocking-Script Size | 後面的解鎖腳本的字節長度
-| 變量 | 解鎖腳本 Unlocking-Script | 滿足UTXO鎖定腳本條件的腳本
+| 變數 | 解鎖腳本 Unlocking-Script | 滿足UTXO鎖定腳本條件的腳本
 | 4 字節 | 序列號 Sequence Number | 用於鎖定時間（locktime）或禁用 (0xFFFFFFFF)
 |=======
 
