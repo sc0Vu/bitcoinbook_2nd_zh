@@ -1,14 +1,14 @@
 #include <random>
 #include <bitcoin/bitcoin.hpp>
 
-// 要搜索的字串
+// 要搜索的字符串
 const std::string search = "1kid";
 
 // 随机生成密钥
 bc::ec_secret random_secret(std::default_random_engine& engine);
 // 从EC密钥中生成比特币地址
 std::string bitcoin_address(const bc::ec_secret& secret);
-// 与要搜索的字串进行比较（大小写敏感）
+// 与要搜索的字符串进行比较（大小写敏感）
 bool match_found(const std::string& address);
 
 int main()
@@ -26,7 +26,7 @@ int main()
         bc::ec_secret secret = random_secret(engine);
         // 生成地址
         std::string address = bitcoin_address(secret);
-        // 是否与目标字串匹配 (1kid)
+        // 是否与目标字符串匹配 (1kid)
         if (match_found(address))
         {
             // 成功
@@ -62,7 +62,7 @@ std::string bitcoin_address(const bc::ec_secret& secret)
 bool match_found(const std::string& address)
 {
     auto addr_it = address.begin();
-    // 比较字串前缀
+    // 比较字符串前缀
     for (auto it = search.begin(); it != search.end(); ++it, ++addr_it)
         if (*it != std::tolower(*addr_it))
             return false;

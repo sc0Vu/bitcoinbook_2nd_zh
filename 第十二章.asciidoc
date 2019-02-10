@@ -176,7 +176,7 @@ $ bitcoin-cli decoderawtransaction `bitcoin-cli getrawtransaction 10d7c4e022f352
 }
 ----
 
-前綴 +4F41+ 表示字母 "OA"，表示 "Open Assets"，幫我們通過Open Assets協議識別接下來的元數據。下面的ASCII編碼字串是資產定義的鏈接：
+前綴 +4F41+ 表示字母 "OA"，表示 "Open Assets"，幫我們通過Open Assets協議識別接下來的元數據。下面的ASCII編碼字符串是資產定義的鏈接：
 
 ----
 u=https://cpr.sm/FoykwrH6UY
