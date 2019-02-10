@@ -331,7 +331,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
 幣基交易沒有解鎖腳本（ +scriptSig+ ）欄位。這個欄位被 coinbase data 替代，該欄位必須包含 2-100 個字節。除了前幾個字節，其他的可由礦工填充任意數據。
 
-例如，中本聰在創世區塊的 coinbase data 中加入了文本 "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks", 將它作為日期的證明，並傳達了一個訊息. 現在，礦工使用 coinbase data 存放額外的隨機值，和識別礦池的字符串。
+例如，中本聰在創世區塊的 coinbase data 中加入了文本 "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks", 將它作為日期的證明，並傳達了一個訊息. 現在，礦工使用 coinbase data 存放額外的隨機值，和識別礦池的字串。
 
 幣基的前幾個字節以前是隨機的，但現在不是了。根據BIP-34，version-2區塊（版本號為2）必須在幣基交易欄位的開頭包含區塊高度作為腳本 push 操作。
 
@@ -341,7 +341,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
 接下來的幾個十六進制數據（+0385840206+），編碼了額外的隨機數（參見 <<extra_nonce>>），用於找到PoW的解決方案。
 
-幣基數據的最後部分（ +2f503253482f+ ）是ASCII編碼的字符串 +/P2SH/+，表明挖到這個區塊的節點支持 BIP-16 中定義的 P2SH 交易。P2SH 能力的引入要求礦工認可BIP-16或BIP-17。支持BIP-16的人將在他們的coinbase數據中包含 +/P2SH/+。支持P2SH的BIP-17實現的人將字符串 +p2sh/CHV+ 包含在他們的coinbase數據中。BIP-16勝出，許多礦工繼續在他們的coinbase中包含字符串 +/P2SH/+ ，以表示對該特性的支持。
+幣基數據的最後部分（ +2f503253482f+ ）是ASCII編碼的字串 +/P2SH/+，表明挖到這個區塊的節點支持 BIP-16 中定義的 P2SH 交易。P2SH 能力的引入要求礦工認可BIP-16或BIP-17。支持BIP-16的人將在他們的coinbase數據中包含 +/P2SH/+。支持P2SH的BIP-17實現的人將字串 +p2sh/CHV+ 包含在他們的coinbase數據中。BIP-16勝出，許多礦工繼續在他們的coinbase中包含字串 +/P2SH/+ ，以表示對該特性的支持。
 
 <<satoshi_words>> 使用 <<alt_libraries>> 中介紹的 libbitcoin 庫從創世區塊中提取幣基數據，展示中本聰的訊息。注意，libbitcoin 庫包含一份創世區塊的靜態副本，所以示例程式碼可以直接從庫中檢索到創世區塊。
 
