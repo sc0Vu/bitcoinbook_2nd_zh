@@ -657,7 +657,7 @@ https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki[BIP-141] :: Segre
 
 https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki[BIP-143] :: 版本0見證程序的交易簽名驗證
 
-https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki[BIP-144] :: 對等服務 - 新的網路消息和序列化格式
+https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki[BIP-144] :: 對等服務 - 新的網路訊息和序列化格式
 
 https://github.com/bitcoin/bips/blob/master/bip-0145.mediawiki[BIP-145] :: 隔離見證的getblocktemplate（用於挖礦）更新
 
