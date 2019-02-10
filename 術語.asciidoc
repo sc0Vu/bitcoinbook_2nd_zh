@@ -114,7 +114,7 @@ LevelDB::
     Locktime, 或者更專業地叫做nLockTime, 是交易的一部分，它表明該交易可能被添加到區塊鏈時最早的時間或最早的區塊。
 
 Memory pool（mempool）::
-    比特幣Memory pool（memory poll）是經過比特幣節點驗證但尚未確認的所有交易數據的集合。
+    比特幣Memory pool（memory pool）是經過比特幣節點驗證但尚未確認的所有交易數據的集合。
 
 默克爾根（merkle root）::
     Merkle樹的根節點，區塊頭必須包含一個有效的merkle根，根據該塊中的所有交易生成。
