@@ -327,7 +327,7 @@ $ curl https://bitcoinfees.21.co/api/v1/fees/recommended
 {"fastestFee":80,"halfHourFee":80,"hourFee":60}
 ----
 
-API返回一個帶有當前費用估計的JSON對象，包含最快速度確認（ +fasterFee+ ），三個塊內確認（ +halfHourFee+ ）和六個塊內確認（ +hourFee+ ）的費用，單位是 satoshi/字節。
+API返回一個帶有當前費用估計的JSON物件，包含最快速度確認（ +fasterFee+ ），三個塊內確認（ +halfHourFee+ ）和六個塊內確認（ +hourFee+ ）的費用，單位是 satoshi/字節。
 
 [[bitcoinfees21co]]
 .Fee estimation service bitcoinfees.21.co
