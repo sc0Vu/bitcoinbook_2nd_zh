@@ -25,7 +25,7 @@
     處理這類失敗的問題抽象地表述為拜占庭將軍問題。
 
 幣基（coinbase）::
-    一種特殊的字段，用作幣基交易的的唯一輸入。coinbase允許聲明區塊獎勵，並可提供最多100字節的任意數據。
+    一種特殊的欄位，用作幣基交易的的唯一輸入。coinbase允許聲明區塊獎勵，並可提供最多100字節的任意數據。
     不要與幣基交易（coinbase transaction）混淆。
 
 幣基交易（coinbase transaction）::
@@ -132,7 +132,7 @@ Memory pool（mempool）::
     一個點對點網路，用於將交易和數據塊傳播到網路上的每個比特幣節點。
 
 隨機數（nonce）::
-    比特幣區塊中的“nonce”是一個32位（4字節）的字段，通過設置它的值可以使得區塊的雜湊值包含若干個前導零。其餘的字段可能不會改變，因為它們具有定義的含義。
+    比特幣區塊中的“nonce”是一個32位（4字節）的欄位，通過設置它的值可以使得區塊的雜湊值包含若干個前導零。其餘的欄位可能不會改變，因為它們具有定義的含義。
 
 脫鏈交易（off-chain transactions）::
     脫鏈交易是區塊鏈之外的價值轉移，鏈上交易（通常簡稱為交易）修改區塊鏈並依靠區塊鏈來確定其有效性，脫鏈交易依賴於其他方法來記錄和驗證交易。
@@ -156,7 +156,7 @@ OP_RETURN 交易::
     由於缺少一個或多個輸入交易，而無法進入交易池的交易。
 
 輸出（output）::
-    輸出，交易輸出，或者TxOut，是交易中的輸出，其包含兩個字段：一個用於傳遞零個或多個聰（satoshis，比特幣最小單位）的值域和一個用於指示為了進一步花費這些聰必須滿足什麼條件的pubkey腳本。
+    輸出，交易輸出，或者TxOut，是交易中的輸出，其包含兩個欄位：一個用於傳遞零個或多個聰（satoshis，比特幣最小單位）的值域和一個用於指示為了進一步花費這些聰必須滿足什麼條件的pubkey腳本。
 
 P2PKH::
     向比特幣地址支付的交易包含P2PKH（Pay To PubKey Hash）腳本，由P2PKH鎖定的輸出可以通過公鑰和由對應的私鑰創建的數字簽名來解鎖（消費）。
@@ -168,10 +168,10 @@ P2SH地址::
     P2SH地址是一個腳本的20比特雜湊值的Base58Check編碼, P2SH地址使用版本前綴“5”，導致Base58Check編碼後的地址以“3”開頭。P2SH地址隱藏了所有的複雜性，因此付款人看不到腳本。
 
 P2WPKH::
-    P2WPKH（Pay-to-Witness-Public-Key-Hash）的簽名包含與P2PKH支出相同的訊息，但位於witness字段而不是scriptSig字段。scriptPubKey也被修改了。
+    P2WPKH（Pay-to-Witness-Public-Key-Hash）的簽名包含與P2PKH支出相同的訊息，但位於witness欄位而不是scriptSig欄位。scriptPubKey也被修改了。
 
 P2WSH::
-    P2SH和P2WSH（Pay-to-Witness-Script-Hash）之間的差異是加密證明訊息的位置從scriptSig字段變為witness字段，scriptPubKey字段也被修改了。
+    P2SH和P2WSH（Pay-to-Witness-Script-Hash）之間的差異是加密證明訊息的位置從scriptSig欄位變為witness欄位，scriptPubKey欄位也被修改了。
 
 紙錢包（paper wallet）::
     具體來講，紙質錢包是一個文件，其中包含生成任意數量的比特幣私鑰所需的所有數據，形成了密鑰的錢包。但是，人們經常使用這個術語來表示任何將比特幣作為物理文檔離線儲存的方式。第二個定義還包括紙密鑰和可兌換程式碼。
