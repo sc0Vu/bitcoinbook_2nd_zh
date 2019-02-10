@@ -59,7 +59,7 @@ $ cd bitcoin
 ----
 
 ==== 選擇Bitcoin Core的發行版
-((("Bitcoin Core", "compiling from source code", "version selection")))默認情況下，本地副本將同步最新的程式碼，這可能是比特幣的不穩定版或beta版。編譯程式碼之前，通過檢查_tag_來選擇特定版本。這將使本地副本與由關鍵字標記標識的程式碼儲存庫的特定快照同步。開發人員使用標籤通過版本號標記程式碼的特定版本。首先，為了找到可用的標籤，我們使用 +git tag+ 命令：
+((("Bitcoin Core", "compiling from source code", "version selection")))預設情況下，本地副本將同步最新的程式碼，這可能是比特幣的不穩定版或beta版。編譯程式碼之前，通過檢查_tag_來選擇特定版本。這將使本地副本與由關鍵字標記標識的程式碼儲存庫的特定快照同步。開發人員使用標籤通過版本號標記程式碼的特定版本。首先，為了找到可用的標籤，我們使用 +git tag+ 命令：
 
 ----
 $ git tag
@@ -91,9 +91,9 @@ nothing to commit, working directory clean
 
 ==== Bitcoin Core的構建配置
 
-((("Bitcoin Core", "compiling from source code", "build configuration")))((("documentation")))((("build documentation", seealso="Bitcoin Core")))源程式碼包括文檔，可以在許多文件中找到。輸入 ++** more README.md**++，查看_bitcoin_目錄中的_README.md_主文檔，可使用空格鍵進行翻頁。在本章中，我們將構建命令行比特幣客戶端（command-line bitcoin client），在Linux上也稱為 +bitcoind+。輸入 ++**more doc/build-unix.md**++ 來查看在你的平臺上編譯 +bitcoind+ 的說明。macOS和Windows的說明可以在_doc_目錄中找到，分別為_build-osx.md_或_build-windows.md_。
+((("Bitcoin Core", "compiling from source code", "build configuration")))((("documentation")))((("build documentation", seealso="Bitcoin Core")))源程式碼包括文件，可以在許多檔案中找到。輸入 ++** more README.md**++，查看_bitcoin_目錄中的_README.md_主文件，可使用空格鍵進行翻頁。在本章中，我們將構建命令行比特幣客戶端（command-line bitcoin client），在Linux上也稱為 +bitcoind+。輸入 ++**more doc/build-unix.md**++ 來查看在你的平臺上編譯 +bitcoind+ 的說明。macOS和Windows的說明可以在_doc_目錄中找到，分別為_build-osx.md_或_build-windows.md_。
 
-仔細查看構建文檔第一部分中的依賴庫，如boost-devel, libevent-devel, openssl-devel, gcc-c++，libdb4-cxx-devel，autoconf, automake，libtool等。在你開始編譯比特幣之前，這些庫必須存在於你的系統中，否則構建過程將失敗。如果因為漏掉了某些依賴庫而導致失敗，可以安裝它，然後從之前停止的地方恢復構建過程。你可以通過使用_autogen.sh_腳本生成一組構建腳本來啟動構建過程。
+仔細查看構建文件第一部分中的依賴庫，如boost-devel, libevent-devel, openssl-devel, gcc-c++，libdb4-cxx-devel，autoconf, automake，libtool等。在你開始編譯比特幣之前，這些庫必須存在於你的系統中，否則構建過程將失敗。如果因為漏掉了某些依賴庫而導致失敗，可以安裝它，然後從之前停止的地方恢復構建過程。你可以通過使用_autogen.sh_腳本生成一組構建腳本來啟動構建過程。
 
 ----
 $ ./autogen.sh
@@ -132,14 +132,14 @@ Optional Features:
 ...
 ----
 
-+configure+ 腳本允許你通過使用 +-enable-FEATURE+ 和 +-disable-FEATURE+ 標誌啟用或禁用 +bitcoind+ 的某些功能，其中 pass:[<span class="keep-together"><code>FEATURE</code></span>] 被替換為幫助輸出中列出的特徵名稱。在本章中，我們將構建帶有所有默認功能的 +bi​​tcoind+ 客戶端。我們不會使用配置標誌，但你應該查看它們以瞭解哪些可選功能是客戶端的一部分。如果你處於學術環境中，實驗室可能會要求你將應用程式安裝到你的主目錄中（例如，使用+-prefix=$HOME+）。
++configure+ 腳本允許你通過使用 +-enable-FEATURE+ 和 +-disable-FEATURE+ 標誌啟用或禁用 +bitcoind+ 的某些功能，其中 pass:[<span class="keep-together"><code>FEATURE</code></span>] 被替換為幫助輸出中列出的特徵名稱。在本章中，我們將構建帶有所有預設功能的 +bi​​tcoind+ 客戶端。我們不會使用配置標誌，但你應該查看它們以瞭解哪些可選功能是客戶端的一部分。如果你處於學術環境中，實驗室可能會要求你將應用程式安裝到你的主目錄中（例如，使用+-prefix=$HOME+）。
 
-以下是覆蓋配置腳本默認行為的一些有用選項：
+以下是覆蓋配置腳本預設行為的一些有用選項：
 
 ++++
 <dl>
 <dt><code>--prefix=$HOME</code></dt>
-<dd><p>覆蓋生成的可執行文件的默認安裝位置 (<em>/usr/local/</em>)。使用<code>$HOME</code>以將所有內容放在你的主目錄，也可以使用其他路徑。</p></dd>
+<dd><p>覆蓋生成的可執行檔案的預設安裝位置 (<em>/usr/local/</em>)。使用<code>$HOME</code>以將所有內容放在你的主目錄，也可以使用其他路徑。</p></dd>
 
 <dt><code>--disable-wallet</code></dt>
 <dd><p>禁用錢包的參考實現。</p></dd>
@@ -169,9 +169,9 @@ checking whether make sets $(MAKE)... yes
 $
 ----
 
-如果一切順利，+configure+ 命令將創建允許我們編譯 +bitcoind+ 的定製構建腳本並結束。如果有任何缺失的庫或錯誤，+configure+ 命令將終止並顯示錯誤。如果發生錯誤，很可能是因為缺少或不兼容的庫。再次查看構建文檔，並確保安裝缺少的先決條件。然後再次運行 +configure+ 並查看是否修復了錯誤。
+如果一切順利，+configure+ 命令將創建允許我們編譯 +bitcoind+ 的定製構建腳本並結束。如果有任何缺失的庫或錯誤，+configure+ 命令將終止並顯示錯誤。如果發生錯誤，很可能是因為缺少或不兼容的庫。再次查看構建文件，並確保安裝缺少的先決條件。然後再次運行 +configure+ 並查看是否修復了錯誤。
 
-==== 構建Bitcoin Core可執行文件
+==== 構建Bitcoin Core可執行檔案
 
 ((("Bitcoin Core", "compiling from source code", "core executables")))((("core executables", seealso="Bitcoin Core")))接下來，你將編譯源程式碼，這個過程可能需要一個小時才能完成，具體取決於CPU的速度和可用內存。在編譯過程中，你應該每隔幾秒或幾分鐘看一次輸出。如果發生錯誤，或者編譯過程中斷，可以通過再次輸入 +make+ 恢復。鍵入 ++**make**++ 開始編譯可執行應用程式：
 
@@ -194,7 +194,7 @@ Making all in src
 $
 ----
 
-在具有多個CPU的系統上，你可以設置並行編譯作業的核數。例如，+make -j 2+ 將使用兩個CPU核。如果一切順利，Bitcoin Core已經編譯完成，你應該使用 +make check+ 運行單元測試套件，以確保鏈接庫不會中斷。最後一步是使用 +make install+ 命令在你的系統上安裝可執行文件。系統可能會提示你輸入用戶密碼，因為此步驟需要管理權限：
+在具有多個CPU的系統上，你可以設置並行編譯作業的核數。例如，+make -j 2+ 將使用兩個CPU核。如果一切順利，Bitcoin Core已經編譯完成，你應該使用 +make check+ 運行單元測試套件，以確保鏈接庫不會中斷。最後一步是使用 +make install+ 命令在你的系統上安裝可執行檔案。系統可能會提示你輸入用戶密碼，因為此步驟需要管理權限：
 
 ----
 $ make check && sudo make install
@@ -208,7 +208,7 @@ libtool: install: /usr/bin/install -c bitcoin-tx /usr/local/bin/bitcoin-tx
 $
 ----
 
-((("", startref="BCsource03")))+bitcoind+默認安裝在 _/usr/local/bin_ 中，你可以查看:
+((("", startref="BCsource03")))+bitcoind+預設安裝在 _/usr/local/bin_ 中，你可以查看:
 
 ----
 $ which bitcoind
@@ -226,7 +226,7 @@ $ which bitcoin-cli
 
 [TIP]
 ====
-((("warnings and cautions", "core node resource requirements")))((("resource requirements")))Bitcoin Core默認保存完整的區塊鏈副本，包括2009年以來所有比特幣網路上發生的交易。該數據集的大小為幾十GB，可以在幾天或幾周內遞增下載，具體取決於你的CPU和網路速度。在完整的區塊鏈數據集下載完之前，Bitcoin Core將無法處理交易或更新賬戶餘額。確保你有足夠的硬碟空間，帶寬和時間來完成初始同步。你可以配置Bitcoin Core，通過丟棄舊塊來減少區塊鏈的大小。(參見 <<constrained_resources>>), 但在丟棄數據之前它仍會下載整個數據集。
+((("warnings and cautions", "core node resource requirements")))((("resource requirements")))Bitcoin Core預設保存完整的區塊鏈副本，包括2009年以來所有比特幣網路上發生的交易。該數據集的大小為幾十GB，可以在幾天或幾周內遞增下載，具體取決於你的CPU和網路速度。在完整的區塊鏈數據集下載完之前，Bitcoin Core將無法處理交易或更新賬戶餘額。確保你有足夠的硬碟空間，帶寬和時間來完成初始同步。你可以配置Bitcoin Core，通過丟棄舊塊來減少區塊鏈的大小。(參見 <<constrained_resources>>), 但在丟棄數據之前它仍會下載整個數據集。
 
 ====
 
@@ -246,7 +246,7 @@ $ which bitcoin-cli
 
 ==== 配置Bitcoin Core節點
 
-((("Bitcoin Core", "running core nodes", "configuring")))((("warnings and cautions", "password creation")))((("passwords", "creating")))((("security", "passwords")))Bitcoin Core在每次啟動時會在其數據目錄中查找配置文件。在本節中，我們將研究各種配置選項並進行配置。要找到配置文件，請在終端中運行 +bitcoind -printtoconsole+ 並查看前幾行。
+((("Bitcoin Core", "running core nodes", "configuring")))((("warnings and cautions", "password creation")))((("passwords", "creating")))((("security", "passwords")))Bitcoin Core在每次啟動時會在其數據目錄中查找配置檔案。在本節中，我們將研究各種配置選項並進行配置。要找到配置檔案，請在終端中運行 +bitcoind -printtoconsole+ 並查看前幾行。
 
 ----
 $ bitcoind -printtoconsole
@@ -259,7 +259,7 @@ Using config file /home/ubuntu/.bitcoin/bitcoin.conf
 ...
 ----
 
-確定了配置文件的位置之後，你可以按Ctrl-C關閉該節點。通常配置文件位於用戶主目錄下的_.bitcoin_數據目錄中。接下來在編輯器中打開配置文件。
+確定了配置檔案的位置之後，你可以按Ctrl-C關閉該節點。通常配置檔案位於用戶主目錄下的_.bitcoin_數據目錄中。接下來在編輯器中打開配置檔案。
 
 Bitcoin Core提供了超過100種配置選項，可以修改網路節點的行為，區塊鏈的儲存以及許多其他方面。要查看這些選項的列表，請運行 +bitcoind --help+：
 
@@ -289,21 +289,21 @@ Options:
        Set the number of threads to service RPC calls (default: 4)
 ----
 
-((("configuration options", seealso="Bitcoin Core")))以下是你可以在配置文件中設置的一些最重要的選項，也可以作為 +bitcoind+ 的命令行參數：
+((("configuration options", seealso="Bitcoin Core")))以下是你可以在配置檔案中設置的一些最重要的選項，也可以作為 +bitcoind+ 的命令行參數：
 
 alertnotify:: 運行指定的命令或腳本，向該節點的所有者發送緊急警報，通常通過電子郵件的形式。
 
-conf:: 配置文件的替代位置。這僅適用於 +bitcoind+ 的命令行參數。
+conf:: 配置檔案的替代位置。這僅適用於 +bitcoind+ 的命令行參數。
 
-datadir:: 放置所有區塊鏈數據的目錄。默認情況下，這是你的主目錄的 _.bitcoin_ 目錄的子目錄。確保這個目錄所在的文件系統有數GB的可用空間。
+datadir:: 放置所有區塊鏈數據的目錄。預設情況下，這是你的主目錄的 _.bitcoin_ 目錄的子目錄。確保這個目錄所在的檔案系統有數GB的可用空間。
 
 prune:: 通過刪除舊的塊，將硬碟空間需求減少到多少MB。在不適合存放完整區塊鏈的資源受限節點上使用它。
 
 txindex:: 維護所有交易的索引。這意味著，允許你以編程方式通過ID檢索一個完整的區塊鏈副本的任何交易。
 
-dbcache:: UTXO緩存的大小。默認值是300MB。在高端硬體上增加該值，在低端硬體上減少該值的大小以節省內存，但會導致更多硬碟開銷。
+dbcache:: UTXO緩存的大小。預設值是300MB。在高端硬體上增加該值，在低端硬體上減少該值的大小以節省內存，但會導致更多硬碟開銷。
 
-maxconnections:: 設置可以從最多多少個節點接受連接。將默認值減小將減少你的帶寬消耗。如果你有帶寬限制或按帶寬支付，請使用此選項。
+maxconnections:: 設置可以從最多多少個節點接受連接。將預設值減小將減少你的帶寬消耗。如果你有帶寬限制或按帶寬支付，請使用此選項。
 
 maxmempool:: 將交易Memory pool的大小設置為多少MB。在內存受限的節點上使用。
 
@@ -314,7 +314,7 @@ minrelaytxfee:: 設置你願意傳播的交易的最低費率。在此值以下�
 [[txindex]]
 .交易資料庫索引和txindex選項
 ****
-((("Bitcoin Core", "running core nodes", "database options")))((("transactions", "database configuration options")))((("txindex option")))((("full indexing option")))默認情況下，Bitcoin Core只創建包含用戶的錢包相關交易的資料庫。如果你想使用 +getrawtransaction+ 之類的命令訪問任何交易，(參見 <<exploring_and_decoding_transanctions>>), 你需要在配置文件中設置 +txindex=1+ 以使 Bitcoin Core 創建完整的交易索引。如果你一開始未設置此選項，在之後設置完成後需要使用 +bitcoind -reindex+ 重啟並等待其重新構建索引。
+((("Bitcoin Core", "running core nodes", "database options")))((("transactions", "database configuration options")))((("txindex option")))((("full indexing option")))預設情況下，Bitcoin Core只創建包含用戶的錢包相關交易的資料庫。如果你想使用 +getrawtransaction+ 之類的命令訪問任何交易，(參見 <<exploring_and_decoding_transanctions>>), 你需要在配置檔案中設置 +txindex=1+ 以使 Bitcoin Core 創建完整的交易索引。如果你一開始未設置此選項，在之後設置完成後需要使用 +bitcoind -reindex+ 重啟並等待其重新構建索引。
 ****
 
 <<full_index_node>> 展示瞭如何將前面的選項與完全索引的節點相結合，作為比特幣應用程式的API後端運行。
@@ -345,7 +345,7 @@ maxsendbuffer=500
 ----
 ====
 
-在按照你需求編輯了配置文件之後，可以運行 +bitcoind -printtoconsole+ 來測試
+在按照你需求編輯了配置檔案之後，可以運行 +bitcoind -printtoconsole+ 來測試
 
 ----
 $ bitcoind -printtoconsole
@@ -409,7 +409,7 @@ $ bitcoin-cli getblockchaininfo
 
 這展示了區塊鏈高度為0個塊，有83999個區塊頭的節點。節點先獲取最佳鏈的區塊頭，然後繼續下載完整塊。
 
-在你完成選項配置之後，應該將比特幣添加到操作系統中的啟動腳本中，以便它可以持續運行並在操作系統重新啟動時重啟。你可以在 _contrib/init_ 下找到比特幣源目錄中各種操作系統的啟動腳本示例以及顯示哪個系統使用哪個腳本的 _README.md_ 文件。((("", startref="BCnode03")))((("", startref="BNcore03")))
+在你完成選項配置之後，應該將比特幣添加到操作系統中的啟動腳本中，以便它可以持續運行並在操作系統重新啟動時重啟。你可以在 _contrib/init_ 下找到比特幣源目錄中各種操作系統的啟動腳本示例以及顯示哪個系統使用哪個腳本的 _README.md_ 檔案。((("", startref="BCnode03")))((("", startref="BNcore03")))
 
 === Bitcoin Core API
 
@@ -676,9 +676,9 @@ Bitcoin Core的API是JSON-RPC接口. JSON代表JavaScript Object Notation，是�
 $ curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockchaininfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ----
 
-此命令表示 +curl+ 向本地主機（127.0.0.1）提交HTTP請求，連接到默認的比特幣端口（8332），並使用 +text/plain+ 編碼為 +getblockchaininfo+ 方法提交 +jsonrpc+ 請求。
+此命令表示 +curl+ 向本地主機（127.0.0.1）提交HTTP請求，連接到預設的比特幣端口（8332），並使用 +text/plain+ 編碼為 +getblockchaininfo+ 方法提交 +jsonrpc+ 請求。
 
-你可能會注意到curl會要求憑證隨請求一起發送。 Bitcoin Core在每次啟動時創建一個隨機密碼，並將其放置在名稱為 +.cookie+ 的數據目錄中。 +bitcoin-cli+ 助手可以根據數據目錄讀取此密碼文件。同樣，你可以複製密碼並將其傳遞給curl（或任何更高級別的Bitcoin Core RPC包裝器）。或者，你可以使用Bitcoin Core源碼目錄中的 _./share/rpcuser/rpcuser.py_ 中提供的助手程序腳本創建一個靜態密碼。
+你可能會注意到curl會要求憑證隨請求一起發送。 Bitcoin Core在每次啟動時創建一個隨機密碼，並將其放置在名稱為 +.cookie+ 的數據目錄中。 +bitcoin-cli+ 助手可以根據數據目錄讀取此密碼檔案。同樣，你可以複製密碼並將其傳遞給curl（或任何更高級別的Bitcoin Core RPC包裝器）。或者，你可以使用Bitcoin Core源碼目錄中的 _./share/rpcuser/rpcuser.py_ 中提供的助手程序腳本創建一個靜態密碼。
 
 你可以正在自己的程序中使用HTTP庫來實現JSON-RPC調用，類似於前面的 +curl+ 示例。
 

@@ -3,7 +3,7 @@
 
 === 簡介
 
-區塊鏈的資料結構是有序的，向前鏈接的區塊和交易的列表。區塊鏈可以儲存為一個扁平的文件，或者簡單的資料庫。Bitcoin Core客戶端使用Google的LevelDB資料庫儲存區塊鏈的元數據。區塊向前鏈接，每個區塊都指向它的前一個區塊。區塊鏈經常被可視化為垂直的堆疊，第一個區塊作為堆疊底，其他的依次向上堆疊。彼此堆疊的區塊堆疊形式引出了 "height" 的術語，來代表區塊與第一個區塊的距離，"top" 和 "tip" 指代最新添加的區塊。
+區塊鏈的資料結構是有序的，向前鏈接的區塊和交易的列表。區塊鏈可以儲存為一個扁平的檔案，或者簡單的資料庫。Bitcoin Core客戶端使用Google的LevelDB資料庫儲存區塊鏈的元數據。區塊向前鏈接，每個區塊都指向它的前一個區塊。區塊鏈經常被可視化為垂直的堆疊，第一個區塊作為堆疊底，其他的依次向上堆疊。彼此堆疊的區塊堆疊形式引出了 "height" 的術語，來代表區塊與第一個區塊的距離，"top" 和 "tip" 指代最新添加的區塊。
 
 區塊鏈中的每個區塊都由一個雜湊值標識，在該區塊頭上使用SHA256加密雜湊演算法生成。每個塊還通過塊頭中的 "previous block hash"（上一個塊的雜湊值）欄位引用先前的塊，稱為 _parent_ 塊。換句話說，每個塊在其自己的頭部中包含其父塊的雜湊值。雜湊值序列創建了一個鏈，將每個塊連接到其父項，一直鏈接到有第一個區塊，稱為 _創世區塊_ _genesis block_。
 
@@ -288,7 +288,7 @@ Testnet是用於測試目的的測試區塊鏈，網路和貨幣的名稱。測�
 $ bitcoind -testnet
 ----
 
-在日誌中，你應該看到bitcoind正在默認bitcoind目錄的 +testnet3+ 子目錄中構建新的區塊鏈：
+在日誌中，你應該看到bitcoind正在預設bitcoind目錄的 +testnet3+ 子目錄中構建新的區塊鏈：
 
 ----
 bitcoind: Using data directory /home/username/.bitcoin/testnet3
@@ -335,7 +335,7 @@ Regtest代表“迴歸測試”，它是一種比特幣核心功能，允許你�
 $ bitcoind -regtest
 ----
 
-與testnet一樣，Bitcoin Core會在你的bitcoind默認目錄的 _regtest_ 子目錄下初始化一個新的區塊鏈：
+與testnet一樣，Bitcoin Core會在你的bitcoind預設目錄的 _regtest_ 子目錄下初始化一個新的區塊鏈：
 
 ----
 bitcoind: Using data directory /home/username/.bitcoin/regtest
