@@ -21,7 +21,7 @@ int main()
     //            bc::wallet::ec_public::mainnet_p2kh);
     //  const std::string address = payaddr.encoded();
 
-    // 计算用于P2PKH地址的公钥哈希值 .
+    // 计算用于P2PKH地址的公钥雜湊值 .
     bc::data_chunk public_key_data;
     public_key.to_data(public_key_data);
     const auto hash = bc::bitcoin_short_hash(public_key_data);
@@ -34,9 +34,9 @@ int main()
     unencoded_address.reserve(25);
     // 版本号字节, 0 代表普通的 BTC 地址 (P2PKH).
     unencoded_address.push_back(0);
-    // 哈希值
+    // 雜湊值
     bc::extend_data(unencoded_address, hash);
-    // 计算哈希值的校验和并放入前4个字节
+    // 计算雜湊值的校验和并放入前4个字节
     bc::append_checksum(unencoded_address);
     // 最后使用base58编码
     assert(unencoded_address.size() == 25);

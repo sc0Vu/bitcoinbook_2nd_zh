@@ -5,10 +5,10 @@ p = RawProxy()
 # Alice的交易所在的区块
 blockheight = 277316
 
-# 获得区块的哈希值
+# 获得区块的雜湊值
 blockhash = p.getblockhash(blockheight)
 
-# 根据哈希值检索区块
+# 根据雜湊值检索区块
 block = p.getblock(blockhash)
 
 # tx元素包含块中的所有交易ID

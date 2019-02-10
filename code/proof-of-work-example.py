@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Proof-of-Work 算法示例
+# Proof-of-Work 演算法示例
 
 import hashlib
 import time
@@ -44,7 +44,7 @@ if __name__ == '__main__':
         # 当前时间
         start_time = time.time()
 
-        # 创建一个包含前一个块的散列的新块
+        # 创建一个包含前一个块的雜湊的新块
         # 我们伪造一个交易块 —— 只是一个字符串。
         new_block = 'test block with transactions' + hash_result
 
@@ -59,6 +59,6 @@ if __name__ == '__main__':
 
         if elapsed_time > 0:
 
-            # 估计每秒的散列计算次数
+            # 估计每秒的雜湊计算次数
             hash_power = float(long(nonce) / elapsed_time)
             print("Hashing Power: %ld hashes per second" % hash_power)

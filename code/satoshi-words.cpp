@@ -1,5 +1,5 @@
 /*
-  展示中本聪创世区块中的信息
+  展示中本聪创世区块中的訊息
 */
 #include <iostream>
 #include <bitcoin/bitcoin.hpp>
@@ -20,7 +20,7 @@ int main()
     const bc::data_chunk& raw_message = coinbase_input.script().to_data(prefix);
     // 转换为std::string
     std::string message(raw_message.begin(), raw_message.end());
-    // 展示信息
+    // 展示訊息
     std::cout << message << std::endl;
     return 0;
 }

@@ -7,29 +7,29 @@ bc::hash_digest create_merkle(bc::hash_list& merkle)
     else if (merkle.size() == 1)
         return merkle[0];
 
-    // 只要有多于1个哈希，循环继续
+    // 只要有多于1个雜湊，循环继续
     while (merkle.size() > 1)
     {
-        // 如果哈希值数量为奇数，复制列表中最后一个哈希值
+        // 如果雜湊值数量为奇数，复制列表中最后一个雜湊值
         if (merkle.size() % 2 != 0)
             merkle.push_back(merkle.back());
         // 列表大小为偶数
         assert(merkle.size() % 2 == 0);
 
-        // 新的哈希值列表
+        // 新的雜湊值列表
         bc::hash_list new_merkle;
         // 每次计算两个
         for (auto it = merkle.begin(); it != merkle.end(); it += 2)
         {
-            // 连接两个哈希值
+            // 连接两个雜湊值
             bc::data_chunk concat_data(bc::hash_size * 2);
             auto concat = bc::serializer<
                 decltype(concat_data.begin())>(concat_data.begin());
             concat.write_hash(*it);
             concat.write_hash(*(it + 1));
-            // 散列
+            // 雜湊
             bc::hash_digest new_root = bc::bitcoin_hash(concat_data);
-            // 将哈希值添加到列表
+            // 将雜湊值添加到列表
             new_merkle.push_back(new_root);
         }
         // 替换为新的列表
@@ -42,7 +42,7 @@ bc::hash_digest create_merkle(bc::hash_list& merkle)
         std::cout << std::endl;
         // --------------------------------------------------
     }
-    // 最终以一个哈希值结束，即 merkle root
+    // 最终以一个雜湊值结束，即 merkle root
     return merkle[0];
 }
 
