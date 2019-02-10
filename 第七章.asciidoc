@@ -964,7 +964,7 @@ Testnet P2WPKH:: tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx
 Mainnet P2WSH:: bc1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qccfmv3
 Testnet P2WSH:: tb1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q0sl5k7
 
-如你所見，segwit bech32字符串長達90個字符，由三個部分組成:
+如你所見，segwit bech32字串長達90個字符，由三個部分組成:
 
 人類可讀的部分:: "bc" 或 "tb" 標明主網（ mainnet ）還是測試網（ testnet ）。
 

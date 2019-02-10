@@ -45,7 +45,7 @@ if __name__ == '__main__':
         start_time = time.time()
 
         # 创建一个包含前一个块的雜湊的新块
-        # 我们伪造一个交易块 —— 只是一个字符串。
+        # 我们伪造一个交易块 —— 只是一个字串。
         new_block = 'test block with transactions' + hash_result
 
         # 为新块找到一个有效的nonce
