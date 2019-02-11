@@ -152,7 +152,7 @@ $ bitcoin-cli getblock 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60
 
 比特幣區塊鏈中的每個區塊都包含一個 _merkle tree_ ，作為所有交易的彙總。
 
-_默克爾樹_ _merkle tree_, 也叫做 _二叉雜湊樹_ _binary hash tree_, 是一種用於有效彙總和驗證大型數據集的完整性的資料結構。 Merkle樹是包含加密雜湊的二叉樹。術語“樹”在電腦科學中被用來描述分支的資料結構，但是這些樹通常是顛倒顯示的，“根”在頂部，“葉子”在底部，你將在下面的例子中看到。
+_默克爾樹_ _merkle tree_, 也叫做 _二元雜湊樹_ _binary hash tree_, 是一種用於有效彙總和驗證大型數據集的完整性的資料結構。 Merkle樹是包含加密雜湊的二元樹。術語“樹”在電腦科學中被用來描述分支的資料結構，但是這些樹通常是顛倒顯示的，“根”在頂部，“葉子”在底部，你將在下面的例子中看到。
 
 [[chain_of_blocks]]
 [role="smallerfourtyfive"]
@@ -186,7 +186,7 @@ H<sub>AB</sub> = SHA256(SHA256(H<sub>A</sub> + H<sub>B</sub>))
 .Calculating the nodes in a merkle tree
 image::images/mbc2_0902.png["merkle_tree"]
 
-由於merkle樹是二叉樹，它需要偶數個葉節點。如果要彙總的交易數量為奇數，則最後一個交易的雜湊值將被複制以創建偶數個葉節點，這稱為 _平衡的樹_ _balanced tree_。在 << merkle_tree_odd>> 中，交易C被複制。
+由於merkle樹是二元樹，它需要偶數個葉節點。如果要彙總的交易數量為奇數，則最後一個交易的雜湊值將被複制以創建偶數個葉節點，這稱為 _平衡的樹_ _balanced tree_。在 << merkle_tree_odd>> 中，交易C被複制。
 
 [[merkle_tree_odd]]
 .Duplicating one data element achieves an even number of data elements
