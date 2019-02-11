@@ -226,7 +226,7 @@ $ which bitcoin-cli
 
 [TIP]
 ====
-((("warnings and cautions", "core node resource requirements")))((("resource requirements")))Bitcoin Core預設保存完整的區塊鏈副本，包括2009年以來所有比特幣網路上發生的交易。該數據集的大小為幾十GB，可以在幾天或幾周內遞增下載，具體取決於你的CPU和網路速度。在完整的區塊鏈數據集下載完之前，Bitcoin Core將無法處理交易或更新賬戶餘額。確保你有足夠的硬碟空間，帶寬和時間來完成初始同步。你可以配置Bitcoin Core，通過丟棄舊塊來減少區塊鏈的大小。(參見 <<constrained_resources>>), 但在丟棄數據之前它仍會下載整個數據集。
+((("warnings and cautions", "core node resource requirements")))((("resource requirements")))Bitcoin Core預設保存完整的區塊鏈副本，包括2009年以來所有比特幣網路上發生的交易。該數據集的大小為幾十GB，可以在幾天或幾周內遞增下載，具體取決於你的CPU和網路速度。在完整的區塊鏈數據集下載完之前，Bitcoin Core將無法處理交易或更新賬戶餘額。確保你有足夠的硬碟空間，帶寬和時間來完成初始同步。你可以配置Bitcoin Core，通過丟棄舊區塊來減少區塊鏈的大小。(參見 <<constrained_resources>>), 但在丟棄數據之前它仍會下載整個數據集。
 
 ====
 
@@ -297,7 +297,7 @@ conf:: 配置檔案的替代位置。這僅適用於 +bitcoind+ 的命令行參�
 
 datadir:: 放置所有區塊鏈數據的目錄。預設情況下，這是你的主目錄的 _.bitcoin_ 目錄的子目錄。確保這個目錄所在的檔案系統有數GB的可用空間。
 
-prune:: 通過刪除舊的塊，將硬碟空間需求減少到多少MB。在不適合存放完整區塊鏈的資源受限節點上使用它。
+prune:: 通過刪除舊的區塊，將硬碟空間需求減少到多少MB。在不適合存放完整區塊鏈的資源受限節點上使用它。
 
 txindex:: 維護所有交易的索引。這意味著，允許你以編程方式通過ID檢索一個完整的區塊鏈副本的任何交易。
 
@@ -407,7 +407,7 @@ $ bitcoin-cli getblockchaininfo
 }
 ----
 
-這展示了區塊鏈高度為0個塊，有83999個區塊頭的節點。節點先獲取最佳鏈的區塊頭，然後繼續下載完整塊。
+這展示了區塊鏈高度為0個區塊，有83999個區塊頭的節點。節點先獲取最佳鏈的區塊頭，然後繼續下載完整區塊。
 
 在你完成選項配置之後，應該將比特幣添加到操作系統中的啟動腳本中，以便它可以持續運行並在操作系統重新啟動時重啟。你可以在 _contrib/init_ 下找到比特幣源目錄中各種操作系統的啟動腳本示例以及顯示哪個系統使用哪個腳本的 _README.md_ 檔案。((("", startref="BCnode03")))((("", startref="BNcore03")))
 
@@ -458,13 +458,13 @@ $ bitcoin-cli getblockhash 1000
 00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09
 ----
 
-結果是一個區塊的雜湊值，在下面的章節中有更詳細的描述。該命令應該在你的系統上返回相同的結果，表明你的Bitcoin Core節點正在運行，接受命令，並且將有關塊1000的訊息返回給你。
+結果是一個區塊的雜湊值，在下面的章節中有更詳細的描述。該命令應該在你的系統上返回相同的結果，表明你的Bitcoin Core節點正在運行，接受命令，並且將有關區塊1000的訊息返回給你。
 
 在接下來的部分中，我們將演示一些非常有用的RPC命令及其預期的輸出。
 
 ==== 獲得Bitcoin Core客戶端的狀態訊息
 
-((("Bitcoin Core", "Bitcoin Core API", "status information")))Bitcoin Core 通過 JSON-RPC 接口提供不同模塊的狀態報告。最重要的命令包括 +getblockchaininfo+, +getmempoolinfo+, +getnetworkinfo+ 和 +getwalletinfo+。
+((("Bitcoin Core", "Bitcoin Core API", "status information")))Bitcoin Core 通過 JSON-RPC 接口提供不同模區塊的狀態報告。最重要的命令包括 +getblockchaininfo+, +getmempoolinfo+, +getnetworkinfo+ 和 +getwalletinfo+。
 
 比特幣的 +getblockchaininfo+ RPC 命令之前已經介紹了。+getnetworkinfo+ 命令用於展示比特幣網路節點的基本狀態訊息。使用 +bitcoin-cli+ 調用:
 
@@ -604,9 +604,9 @@ d50f654e788acd0ef8000000000001976a9147f9b1a7fb68d60c536c2fd8aeaa53a8f3cc025a8&#x
 
 ((("Bitcoin Core", "Bitcoin Core API", "exploring blocks")))((("blocks", "exploring with Bitcoin Core API")))命令: +getblock+, +getblockhash+
 
-((("blocks", "block height")))((("blocks", "block hash")))檢查區塊與檢查交易類似。區塊可以通過塊_高度（height）_或塊_雜湊（hash）_來引用。首先，我們根據高度找到一個塊。在 <<cup_of_coffee>> 中，我們看到Alice的交易包含在區塊#277316中。
+((("blocks", "block height")))((("blocks", "block hash")))檢查區塊與檢查交易類似。區塊可以通過區塊_高度（height）_或區塊_雜湊（hash）_來引用。首先，我們根據高度找到一個區塊。在 <<cup_of_coffee>> 中，我們看到Alice的交易包含在區塊#277316中。
 
-將塊高度作為 +getblockhash+ 命令的參數, ，將返回區塊的雜湊值:
+將區塊高度作為 +getblockhash+ 命令的參數, ，將返回區塊的雜湊值:
 
 ++++
 <pre data-type="programlisting">
@@ -615,7 +615,7 @@ $ bitcoin-cli getblockhash 277316
 </pre>
 ++++
 
-現在我們知道Alice的交易被包含在哪個塊中了，我們可以使用 +getblock+ 命令，傳遞區塊雜湊值來查詢該塊。
+現在我們知道Alice的交易被包含在哪個區塊中了，我們可以使用 +getblock+ 命令，傳遞區塊雜湊值來查詢該區塊。
 
 ++++
 <pre data-type="programlisting">
@@ -760,7 +760,7 @@ https://github.com/libbitcoin/libbitcoin-explorer[bitcoin explorer]:: Libbitcoin
 https://github.com/jgarzik/picocoin[picocoin]:: Jeff Garzik寫的C語音的輕量級比特幣客戶端庫
 
 ==== JavaScript
-http://bcoin.io/[bcoin]:: 帶有API​​的模塊化，可擴展的完整節點實現
+http://bcoin.io/[bcoin]:: 帶有API​​的模區塊化，可擴展的完整節點實現
 https://bitcore.io/[Bitcore] :: Bitpay提供的完整節點，API和程序庫
 https://github.com/bitcoinjs/bitcoinjs-lib[BitcoinJS] :: 用於node.js和瀏覽器的純JavaScript比特幣庫
 
