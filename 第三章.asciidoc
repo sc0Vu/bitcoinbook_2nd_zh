@@ -464,7 +464,7 @@ $ bitcoin-cli getblockhash 1000
 
 ==== 獲得Bitcoin Core客戶端的狀態訊息
 
-((("Bitcoin Core", "Bitcoin Core API", "status information")))Bitcoin Core 通過 JSON-RPC 接口提供不同模區塊的狀態報告。最重要的命令包括 +getblockchaininfo+, +getmempoolinfo+, +getnetworkinfo+ 和 +getwalletinfo+。
+((("Bitcoin Core", "Bitcoin Core API", "status information")))Bitcoin Core 通過 JSON-RPC 接口提供不同模塊的狀態報告。最重要的命令包括 +getblockchaininfo+, +getmempoolinfo+, +getnetworkinfo+ 和 +getwalletinfo+。
 
 比特幣的 +getblockchaininfo+ RPC 命令之前已經介紹了。+getnetworkinfo+ 命令用於展示比特幣網路節點的基本狀態訊息。使用 +bitcoin-cli+ 調用:
 
@@ -760,7 +760,7 @@ https://github.com/libbitcoin/libbitcoin-explorer[bitcoin explorer]:: Libbitcoin
 https://github.com/jgarzik/picocoin[picocoin]:: Jeff Garzik寫的C語音的輕量級比特幣客戶端庫
 
 ==== JavaScript
-http://bcoin.io/[bcoin]:: 帶有API​​的模區塊化，可擴展的完整節點實現
+http://bcoin.io/[bcoin]:: 帶有API​​的模塊化，可擴展的完整節點實現
 https://bitcore.io/[Bitcore] :: Bitpay提供的完整節點，API和程序庫
 https://github.com/bitcoinjs/bitcoinjs-lib[BitcoinJS] :: 用於node.js和瀏覽器的純JavaScript比特幣庫
 
