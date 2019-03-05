@@ -53,7 +53,7 @@
 
 === 比特幣的歷史
 
-((("Nakamoto, Satoshi")))((("distributed computing")))((("bitcoin", "history of")))比特幣是在2008年隨著一篇署名中本聰的論文 "Bitcoin: A Peer-to-Peer Electronic Cash System,"footnote:["Bitcoin: A Peer-to-Peer Electronic Cash System," Satoshi Nakamoto (https://bitcoin.org/bitcoin.pdf).] 的發表誕生的 (see <<satoshi_whitepaper>> (https://bitcoin.org/bitcoin.pdf)). 中本聰結合了b-money和HashCash等之前幾個發明，創造了一個完全去中心化的的電子現金系統，它不依賴於中央機構進行貨幣發行、交易結算和確認。 關鍵性的創新是使用分佈式計算系統（ Proof-of-Work（工作證明）演算法）每10分鐘進行一次全局“選舉”，從而使去中心化網路就交易狀態達成共識。 這個方法優雅地解決了雙重支付（一筆現金可以支付兩次）問題。在之前，雙重支付問題是數字貨幣的弱點，通常通過中央機構清算所有交易解決。
+((("Nakamoto, Satoshi")))((("distributed computing")))((("bitcoin", "history of")))比特幣是在2008年隨著一篇署名中本聰的論文 "Bitcoin: A Peer-to-Peer Electronic Cash System,"footnote:["Bitcoin: A Peer-to-Peer Electronic Cash System," Satoshi Nakamoto (https://bitcoin.org/bitcoin.pdf).] 的發表誕生的 (see [satoshi_whitepaper](https://bitcoin.org/bitcoin.pdf)). 中本聰結合了b-money和HashCash等之前幾個發明，創造了一個完全去中心化的的電子現金系統，它不依賴於中央機構進行貨幣發行、交易結算和確認。 關鍵性的創新是使用分佈式計算系統（ Proof-of-Work（工作證明）演算法）每10分鐘進行一次全局“選舉”，從而使去中心化網路就交易狀態達成共識。 這個方法優雅地解決了雙重支付（一筆現金可以支付兩次）問題。在之前，雙重支付問題是數字貨幣的弱點，通常通過中央機構清算所有交易解決。
 
 比特幣網路於2009年上線，基於中本聰發佈的一個參考實現並由許多其他開發者修訂。 為比特幣提供安全性和可靠性的Proof-of-Work演算法（挖礦演算法）的算力呈指數型增長，現在已經超過了世界上頂尖的超級電腦的算力。 比特幣的市值曾超過1350億美元。目前最大的一筆交易是4億美元，即時到賬，手續費1美元。
 
