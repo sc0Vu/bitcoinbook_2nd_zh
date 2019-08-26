@@ -1,8 +1,6 @@
 [[ch03_bitcoin_client]]
 == Bitcoin Core：參考實現
 
-<<第二章#,上一章：比特幣如何運作>>
-
 ((("open source licenses")))((("Nakamoto, Satoshi")))比特幣是開源的項目，源程式碼使用MIT授權方式，可以免費下載和使用。開源不僅意味著免費使用，也意味著比特幣是由開源志願者社區開發的。起初，這個社區只包括中本聰（Satoshi Nakamoto）。到2016年，比特幣的源程式碼擁有超過400個貢獻者，大約有十幾位開發人員幾乎全職工作，另外幾十人兼職工作。任何人都可以貢獻程式碼，包括你！
 
 
@@ -792,7 +790,3 @@ https://github.com/MetacoSA/NBitcoin[NBitcoin]:: .NET框架的綜合比特幣庫
 https://github.com/oleganza/CoreBitcoin[CoreBitcoin]:: 為ObjC和Swift提供的比特幣工具包
 
 還有各種程式語言的庫存在，還有更多的庫在開發。((("", startref="BCalt03")))((("", startref="clients03")))((("", startref="thirdpart03")))((("", startref="toolkit03")))((("", startref="librar03")))
-
-<<第四章#,下一章：密鑰與地址>>
-
-
