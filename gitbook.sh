@@ -5,6 +5,7 @@ git push -u origin master
 git branch  -r -d  origin/gh-pages
 git push origin :gh-pages
 git checkout -b gh-pages
+git checkout  gh-pages
 cp -r _book/* .
 git add .
 git commit -m $1
