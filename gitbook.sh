@@ -2,9 +2,6 @@ git checkout master
 git add .
 git commit -m $1
 git push origin master
-git branch -D gh-pages
-git branch  -r -d  origin/gh-pages
-git push origin :gh-pages
 git checkout --orphan gh-pages
 git rm --cached -r .
 git clean -df
