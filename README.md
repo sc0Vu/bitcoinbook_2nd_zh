@@ -1,4 +1,4 @@
-> 刷新branch 網頁腳本：run `sh gitbook.sh '刷新網頁'`，依賴gitbook,gitbook-cli,git
+> 刷新branch 網頁腳本：run `sh gitbook.sh '刷新網頁'`，依賴gitbook,gitbook-cli,git。刷新後要在`xxx.github.io/reponame`出現網頁，倘若沒出現，請至repo的setting，設定branch 為`gh-pages`。
 
 # Mastering Bitcoin 2nd Edition - 繁中
 ![](https://img.shields.io/badge/Language-Traditional%20Chinese-orange.svg)
