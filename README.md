@@ -1,15 +1,29 @@
 # Mastering Bitcoin 2nd Edition - 繁中
 ![](https://img.shields.io/badge/Language-Traditional%20Chinese-orange.svg)
 ![https://github.com/aantonop](https://img.shields.io/badge/Author-aantonop-yellowgreen.svg)
-![https://github.com/inoutcode](https://img.shields.io/badge/Translator-inoutcode-lightgrey.svg)
-![https://github.com/ChenPoWei](https://img.shields.io/badge/Translator-Chen%20Po%20Wei-blue.svg)    
+ 
+本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。
+
+  **[倉庫位置](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)、[線上gitbook位置](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)、 [電子書下載](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh/releases)**
 
 <center>
 <img src="https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png" width="40%" height="40%" />
 </center>
 
-本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。
+#### 如何貢獻
+* 如果看到有錯字或是需要修改的內容，直接提交pr到master分支當中。
+  > repo 的 owner 會重新 build 成網頁 放到 gh-pages 分支 當中
+#### 測試
+* fork 到自己的倉庫後，檢查一下有沒有 gh-pages 分支，沒有的話執行一下`git checkout -b gh-pages`建立一下，在執行`git checkout master`切回原本的分支。
+* 要安裝一下gitbook, gitbook-cli
+```
+sudo npm install -g gitbook-cli
+sudo npm install -g gitbook
+```
+* 在repo當中有留下gitbook.sh的腳本，他可以自動推送到gh-pages分支當中，執行`sh gitbook.sh '更新'`，就可以在自己的`xxx.github.io/bitcoinbook_2nd_zh/`網址看到自己的網頁勒
 
+> Mastering Bitcoin 原始作者為 Andreas M. Antonopoulos，原作寫了[第一版](https://github.com/bitcoinbook/bitcoinbook/releases/tag/Edition1Print1)、[第二版](https://github.com/bitcoinbook/bitcoinbook/releases/tag/second_edition_print_1)。> 巴比特上已經出現了[簡體中文的第一版](http://v1.8btc.com/books/261/master_bitcoin/_book/)。但17年原作撰寫了第二版，inoutcode翻譯了一份較為完整的[簡中第二版](https://github.com/inoutcode/bitcoin_book_2nd)，[巴比特](http://v1.8btc.com/books/261/master_bitcoin/_book/)也出了一版。
+> [Cypherpunks-core](https://github.com/cypherpunks-core) 主要參考inoutcode的簡體中文第二版進行翻譯。
 
 ## Mastering Bitcoin - Second Edition
 

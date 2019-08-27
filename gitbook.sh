@@ -1,10 +1,6 @@
-git checkout master
+cd build
+git init
+git checkout -b gh-pages
 git add .
-git commit -m $1
-git push -u origin master
-git checkout gh-pages
-cp -r _book/* .
-git add .
-git commit -m $1
-git push -u origin gh-pages
-git checkout master
+git commit -am "Update"
+git push  gh-pages --force
