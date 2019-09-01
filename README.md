@@ -1,12 +1,10 @@
-> 刷新branch 網頁腳本：run `sh gitbook.sh '刷新網頁'`，依賴gitbook,gitbook-cli,git。刷新後要在`xxx.github.io/reponame`出現網頁，倘若沒出現，請至repo的setting，設定branch 為`gh-pages`。
+[**電子書線上看**](https://cypherpunks-core.github.io/bitcoinbook_2nd_zh/)、 [**電子書下載**](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh/releases)、[**本倉庫位置**](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)
 
 # Mastering Bitcoin 2nd Edition - 繁中
 ![](https://img.shields.io/badge/Language-Traditional%20Chinese-orange.svg)
 ![https://github.com/aantonop](https://img.shields.io/badge/Author-aantonop-yellowgreen.svg)
  
 本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。
-
-  **[倉庫位置](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)、[線上gitbook位置](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)、 [電子書下載](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh/releases)**
 
 <center>
 <img src="https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/cover.png" width="40%" height="40%" />
