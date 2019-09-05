@@ -46,11 +46,11 @@
  - git add .
  - git commit -m "Update GitBook By TravisCI With Build $TRAVIS_BUILD_NUMBER"
  - git remote rm origin
- - git remote add origin https://${GH_USER}:${GH_PASSWORD}@github.com/awesome-doge/bitcoinbook_2nd_zh.git
+ - git remote add origin https://${GH_USER}:${GH_PASSWORD}@github.com/cypherpunks-core/bitcoinbook_2nd_zh
  - git push --force --quiet origin master:master
 
  # 环境变量
  env:
  global:
  # Github Pages 
- - GH_REF: github.com/awesome-doge/bitcoinbook_2nd_zh.git
+ - GH_REF: github.com/cypherpunks-core/bitcoinbook_2nd_zh
