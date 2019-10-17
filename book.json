@@ -1,3 +1,19 @@
 {
-    "plugins": ["mathjax"]
+    "plugins": [
+        "ga",
+        "mathjax",
+        "github"
+      ],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-131051587-3"
+        },
+        "github": {
+            "url": "https://github.com/cypherpunks-core/bitcoinbook_2nd_zh"
+        }
+    },
+    "title" : "Mastering Bitcoin 2nd Edition - 繁中",
+    "author" : "aantonop",
+    "description" : "本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。",
+    "language" : "zh-tw"
 }
