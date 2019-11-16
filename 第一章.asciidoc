@@ -128,7 +128,7 @@ Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品
 ((("getting started", "quick start example", id="GSquick01")))((("wallets", "quick start example", id="Wquick01")))((("use cases", "buying coffee", id="aliceone")))我們之前介紹的Alice不是技術人員，而且最近才從朋友Joe那聽說比特幣。
 在一次派對上，Joe又一次熱情地向周圍的人講解和演示比特幣。出於好奇，Alice想知道她如何開始使用比特幣。Joe說移動錢包最適合新用戶，並推薦了一些他最喜愛的錢包。Alice便將“Mycelium”安裝到了她的Android手機上。
 
-當愛麗絲第一次運行Mycelium時，程序會自動為她創建一個新錢包。Alice看到的錢包界面，如<<mycelium-welcome>>所示（注意：不要將比特幣發送到此示例地址，它將永遠丟失）。
+當 Alice 第一次運行Mycelium時，程序會自動為她創建一個新錢包。Alice看到的錢包界面，如<<mycelium-welcome>>所示（注意：不要將比特幣發送到此示例地址，它將永遠丟失）。
 
 [[mycelium-welcome]]
 .The Mycelium Mobile Wallet
@@ -186,7 +186,7 @@ http://bit.ly/cmebrr[Chicago Mercantile Exchange Bitcoin Reference Rate]:: 可�
 [[sending_receiving]]
 ==== 發送和接收比特幣
 
-((("getting started", "sending and receiving bitcoin", id="GSsend01")))((("spending bitcoin", "bitcoin wallet quick start example")))((("spending bitcoin", see="also transactions")))愛麗絲決定兌換10美元的比特幣，以免在這項新技術上冒太多風險。她給了Joe 10美元現金，打開她的Mycelium錢包應用程式，並選擇Receive。這顯示了Alice的第一個比特幣地址的QR碼。
+((("getting started", "sending and receiving bitcoin", id="GSsend01")))((("spending bitcoin", "bitcoin wallet quick start example")))((("spending bitcoin", see="also transactions"))) Alice 決定兌換10美元的比特幣，以免在這項新技術上冒太多風險。她給了Joe 10美元現金，打開她的Mycelium錢包應用程式，並選擇Receive。這顯示了Alice的第一個比特幣地址的QR碼。
 
 Joe在他的智能手機錢包上選擇“Send”，然後看到包含兩個輸入的界面：
 
