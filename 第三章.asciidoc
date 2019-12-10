@@ -524,7 +524,7 @@ ae24cb02204b9f039ff08df09cbe9f6addac960298cad530a863ea8f53982c09db8f6e3813014&#x
 
 [TIP]
 ====
-((("transaction IDs (txd)")))((("malleability")))在交易確認之前，交易ID不是可信的。區塊鏈中沒有交易的雜湊值並不意味著交易未處理。這被稱為“交易可鍛性（transaction malleability）”，因為在區塊中確認之前，交易的雜湊可以被修改。確認後，+txid+ 是不可變的和可信的。
+((("transaction IDs (txd)")))((("malleability")))在交易確認之前，交易ID不是可信的。區塊鏈中沒有交易的雜湊值並不意味著交易未處理。這被稱為“交易延展性（transaction malleability）”，因為在區塊中確認之前，交易的雜湊可以被修改。確認後，+txid+ 是不可變的和可信的。
 ====
 
 +getrawtransaction+ 命令以十六進制返回一個序列化的交易。將它作為 +decoderawtransaction+ 命令的參數可以解碼：
