@@ -280,7 +280,7 @@ Testnet是用於測試目的的測試區塊鏈，網路和貨幣的名稱。測�
 
 ===== 使用測試網
 
-像幾乎所有其他比特幣軟體一樣，Bitcoin Core完全支持在testnet而不是mainnet上運行。比特幣核心的所有功能都在測試網路上運行，包括錢包，開採測試網的幣，以及同步完整的測試網節點。
+像幾乎所有其他比特幣軟體一樣，Bitcoin Core完全支援在testnet而不是mainnet上運行。比特幣核心的所有功能都在測試網路上運行，包括錢包，開採測試網的幣，以及同步完整的測試網節點。
 
 要在測試網上啟動 Bitcoin Core，使用 +testnet+ 選項：
 
@@ -315,7 +315,7 @@ $ bitcoin-cli -testnet getblockchaininfo
 
 你還可以使用其他完整節點實現（如 +btcd+（用Go編寫）和 +bcoin+（用JavaScript編寫））在testnet3上運行，以便在其他程式語言和框架中進行實驗和學習。
 
-2017年初，testnet3支持了mainnet的所有功能，包括隔離見證（參見 <<segwit>>）。因此，testnet3也可以用來測試隔離見證功能。
+2017年初，testnet3支援了mainnet的所有功能，包括隔離見證（參見 <<segwit>>）。因此，testnet3也可以用來測試隔離見證功能。
 
 ==== Segnet —— 隔離見證測試網
 
