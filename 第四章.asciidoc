@@ -6,7 +6,7 @@
 
 === 簡介
 
-((("digital keys", see="keys and addresses")))((("keys and addresses", "overview of", id="KAover04")))((("digital signatures", "purpose of")))比特幣的所有權通過 _數字密鑰（digital keys）_ ， _比特幣地址（bitcoin addresses）_ 和 _數字指紋（digital signatures）_ 建立。數字密鑰實際上並不儲存在網路中，而是由用戶創建並儲存在檔案或稱為 _錢包（wallet）_ 的簡單資料庫中。用戶錢包中的數字密鑰完全獨立於比特幣協議，可以由用戶的錢包軟體生成和管理，無需參考區塊鏈或訪問互聯網。密鑰支撐了比特幣的許多有趣特性，包括去中心化的信任和控制，所有權證明以及有密碼學保障的安全模型。
+((("digital keys", see="keys and addresses")))((("keys and addresses", "overview of", id="KAover04")))((("digital signatures", "purpose of")))比特幣的所有權通過 _數字密鑰（digital keys）_ ， _比特幣地址（bitcoin addresses）_ 和 _數字指紋（digital signatures）_ 建立。數字密鑰實際上並不儲存在網路中，而是由用戶創建並儲存在檔案或稱為 _錢包（wallet）_ 的簡單資料庫中。用戶錢包中的數字密鑰完全獨立於比特幣協議，可以由用戶的錢包軟體生成和管理，無需參考區塊鏈或訪問網路。密鑰支撐了比特幣的許多有趣特性，包括去中心化的信任和控制，所有權證明以及有密碼學保障的安全模型。
 
 為了包含在區塊鏈中，大多數比特幣交易需要有效的數字簽名，這些交易只能使用密鑰生成；因此，任何擁有該密鑰副本的人都可以控制這些比特幣。((("witnesses"))) 用於花費資金的數字簽名也被稱為 _證據（witness)_ ，是密碼學中的術語。比特幣交易中的證據證明瞭所花費資金的真實所有權。
 
@@ -804,7 +804,7 @@ Eugenia 可以發佈一個隨機生成的地址（例如 +1J7mdg5rbQyUHENYdx39WV
 |1424C2F4bC9JidNjjTUZCbUxv6Sa1Mt62x|5J3mBbAH58CpQ3Y5RNJpUKPE62SQ5tfcvU2JpbnkeyhfsYB1Jcn
 |=======================
 
-例如位於_bitaddress.org_的客戶端JavaScript生成器的工具可以輕鬆生成紙錢包。此頁面包含生成密鑰和紙錢包所需的全部程式碼，即使與互聯網完全斷開。要使用它，請將HTML頁面保存在本地硬盤或外部USB儲存上，斷開互聯網並在瀏覽器中打開它。更好的是，使用乾淨的操作系統啟動電腦，例如可以從CD-ROM啟動的Linux操作系統。離線時使用此工具生成的任何密鑰都可以通過USB（非無線）在本地打印機上打印，從而創建紙錢包，其密鑰僅存在於紙張上，從未儲存在任何在線系統上。將這些紙錢包放入防火保險櫃中，並將比特幣“發送”至其比特幣地址，以實施簡單而高效的“冷儲存”解決方案。 <<paper_wallet_simple>> 展示了從bitaddress.org網站生成的紙錢包.
+例如位於_bitaddress.org_的客戶端JavaScript生成器的工具可以輕鬆生成紙錢包。此頁面包含生成密鑰和紙錢包所需的全部程式碼，即使與網路完全斷開。要使用它，請將HTML頁面保存在本地硬盤或外部USB儲存上，斷開網路並在瀏覽器中打開它。更好的是，使用乾淨的操作系統啟動電腦，例如可以從CD-ROM啟動的Linux操作系統。離線時使用此工具生成的任何密鑰都可以通過USB（非無線）在本地打印機上打印，從而創建紙錢包，其密鑰僅存在於紙張上，從未儲存在任何在線系統上。將這些紙錢包放入防火保險櫃中，並將比特幣“發送”至其比特幣地址，以實施簡單而高效的“冷儲存”解決方案。 <<paper_wallet_simple>> 展示了從bitaddress.org網站生成的紙錢包.
 
 [[paper_wallet_simple]]
 .An example of a simple paper wallet from bitaddress.org
