@@ -450,7 +450,7 @@ ENDIF
 
 “閃電網路”是指用於路由支付通道網路的特定設計，現在已經由至少五個不同的開源團隊實現。獨立實現由一組互操作性標準進行協調：http://bit.ly/2rBHeoL[_Basics of Lightning Technology (BOLT)_ paper]。
 
-閃電網路的原型實現已由多個團隊發佈。目前，這些實現只能在testnet上運行，因為它們使用segwit，而沒有在主比特幣區塊鏈（mainnet）上激活。
+閃電網路的原型實現已由多個團隊發佈。目前，這些實現只能在testnet上運行，因為它們使用segwit，而沒有在主比特幣區塊鏈（mainnet）上啟用。
 
 閃電網路是實施路由支付通道的一種可能方式。還有其他幾個旨在實現類似目標的設計，例如Teechan和Tumblebit。
 
