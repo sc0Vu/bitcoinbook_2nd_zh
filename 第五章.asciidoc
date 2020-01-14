@@ -116,13 +116,13 @@ Gabriel 使用 Trezor 比特幣硬體錢包 (<<a_trezor_device>>) 安全地管�
 .A Trezor device: a bitcoin HD wallet in hardware
 image::images/mbc2_0504.png[alt]
 
-當Gabriel首次使用Trezor時，該設備通過內置硬體隨機數生成器生成助記符和種子。在這個初始化階段，錢包在屏幕上逐一顯示帶有編號的單詞序列（參見 <<trezor_mnemonic_display>>）。
+當Gabriel首次使用Trezor時，該設備通過內置硬體隨機數生成器生成助記詞和種子。在這個初始化階段，錢包在屏幕上逐一顯示帶有編號的單詞序列（參見 <<trezor_mnemonic_display>>）。
 
 [[trezor_mnemonic_display]]
 .Trezor displaying one of the mnemonic words
 image::images/mbc2_0505.png["Trezor wallet display of mnemonic word"]
 
-記錄下助記詞，Gabriel可以在他的Trezor設備丟失或損壞時使用備份的助記詞進行恢復。這種助記符可以用於新的Trezor設備或任意一個兼容的軟體或硬體錢包。請注意，助記詞的順序很重要。
+記錄下助記詞，Gabriel可以在他的Trezor設備丟失或損壞時使用備份的助記詞進行恢復。這種助記詞可以用於新的Trezor設備或任意一個兼容的軟體或硬體錢包。請注意，助記詞的順序很重要。
 
 [[mnemonic_paper_backup]]
 .Gabriel's paper backup of the mnemonic
@@ -195,7 +195,7 @@ image::images/mbc2_0506.png["Generating entropy and encoding as mnemonic words"]
 |=======
 
 [[mnemonic_to_seed]]
-===== 從助記符到種子
+===== 從助記詞到種子
 
 助記詞表示長度為128到256位的熵。然後使用熵通過使用密鑰擴展函數PBKDF2來匯出更長的（512位）種子。之後使用生成的種子構建確定性錢包並匯出其密鑰。
 
@@ -219,7 +219,7 @@ image::images/mbc2_0507.png["From mnemonic to seed"]
 
 [TIP]
 ====
-密鑰擴展方法及其2048輪雜湊是一種非常有效的防止對助記詞或密碼短語攻擊的保護。它使得嘗試超過幾千個密碼和助記符組合的成本非常高，而可能派生的種子數量很大（2^512^）。
+密鑰擴展方法及其2048輪雜湊是一種非常有效的防止對助記詞或密碼短語攻擊的保護。它使得嘗試超過幾千個密碼和助記詞組合的成本非常高，而可能派生的種子數量很大（2^512^）。
 ====
 
 表格 pass:[<a data-type="xref" href="#mnemonic_128_no_pass" data-xrefstyle="select: labelnumber">#mnemonic_128_no_pass</a>], pass:[<a data-type="xref" href="#mnemonic_128_w_pass" data-xrefstyle="select: labelnumber">#mnemonic_128_w_pass</a>], and pass:[<a data-type="xref" href="#mnemonic_256_no_pass" data-xrefstyle="select: labelnumber">#mnemonic_256_no_pass</a>] 顯示一些助記詞和他們產生的種子（沒有任何密碼）的例子。
@@ -262,7 +262,7 @@ luggage oxygen faint major edit measure invite love trap field dilemma oblige+
 [[mnemonic_passphrase]]
 ===== BIP-39中可選的密碼
 
-BIP-39標準允許在派生種子中使用可選的密碼。如果沒有使用密碼，助記詞將被一個常量字串 +mnemonic+ 的鹽擴展，產生一個特定的512位種子。如果使用密碼短語，則擴展函數會從同一助記符中生成一個 _不同的_ 種子。對於一個助記詞，每一個可能的密碼都會導致不同的種子。本質上，沒有 “錯誤的” 密碼。所有密碼都是有效的，會生成不同的種子，形成一大批未初始化的錢包。可能的錢包的集合非常大（2^512^），因此沒有可能暴力破解或意外猜測出正在使用的錢包。
+BIP-39標準允許在派生種子中使用可選的密碼。如果沒有使用密碼，助記詞將被一個常量字串 +mnemonic+ 的鹽擴展，產生一個特定的512位種子。如果使用密碼短語，則擴展函數會從同一助記詞中生成一個 _不同的_ 種子。對於一個助記詞，每一個可能的密碼都會導致不同的種子。本質上，沒有 “錯誤的” 密碼。所有密碼都是有效的，會生成不同的種子，形成一大批未初始化的錢包。可能的錢包的集合非常大（2^512^），因此沒有可能暴力破解或意外猜測出正在使用的錢包。
 
 [TIP]
 ====
@@ -293,7 +293,7 @@ https://github.com/bitcoinjs/bip39[bitcoinjs/bip39]:: BIP-39的JavaScript實現�
 
 https://github.com/libbitcoin/libbitcoin/blob/master/src/wallet/mnemonic.cpp[libbitcoin/mnemonic]:: BIP-39的C++實現，是流行的Libbitcoin框架的一部分。
 
-還有一個在網頁中實現的BIP-39生成器，這對於測試非常有用。 <<a_bip39_generator_as_a_standalone_web_page>> 展示了生成助記符，種子和擴展私鑰的網頁。
+還有一個在網頁中實現的BIP-39生成器，這對於測試非常有用。 <<a_bip39_generator_as_a_standalone_web_page>> 展示了生成助記詞，種子和擴展私鑰的網頁。
 
 [[a_bip39_generator_as_a_standalone_web_page]]
 .A BIP-39 generator as a standalone web page
