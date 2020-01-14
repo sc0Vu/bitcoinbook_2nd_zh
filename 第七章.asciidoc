@@ -948,12 +948,12 @@ HASH160 86762607e8fe87c0c37740cddee880988b9455b2 EQUAL
 
 https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki[BIP-173]:: Base32 address format for native v0-16 witness outputs
 
-BIP-173僅對見證腳本（P2WPKH和P2WSH）進行編碼。它與非segwit P2PKH或P2SH腳本不兼容。與傳統的比特幣地址的Base58編碼相比，BIP-173是Base32校驗和編碼。 BIP-173地址也稱為 _bech32_ 地址，發音為 "beh-ch thirty two"，暗指使用“BCH”錯誤檢測演算法和32字符編碼集。
+BIP-173僅對見證腳本（P2WPKH和P2WSH）進行編碼。它與非segwit P2PKH或P2SH腳本不兼容。與傳統的比特幣地址的Base58編碼相比，BIP-173是Base32校驗和編碼。 BIP-173地址也稱為 _bech32_ 地址，發音為 "beh-ch thirty two"，暗指使用“BCH”錯誤檢測演算法和32字元編碼集。
 
 
-BIP-173地址使用32個小寫字母的字母數字字符集，經過仔細選擇以減少誤讀或錯誤輸入。通過只選擇小寫字母集，bech32更容易閱讀，朗讀，並且在QR碼中的編碼效率提高了45％。
+BIP-173地址使用32個小寫字母的字母數字字元集，經過仔細選擇以減少誤讀或錯誤輸入。通過只選擇小寫字母集，bech32更容易閱讀，朗讀，並且在QR碼中的編碼效率提高了45％。
 
-BCH錯誤檢測演算法比以前的校驗和演算法(Base58Check)有了很大的改進，它不僅檢測，還能糾正錯誤。地址輸入接口(如表單中的文本框)可以檢測並突出顯示在檢測錯誤時最可能出現錯誤的字符。
+BCH錯誤檢測演算法比以前的校驗和演算法(Base58Check)有了很大的改進，它不僅檢測，還能糾正錯誤。地址輸入接口(如表單中的文本框)可以檢測並突出顯示在檢測錯誤時最可能出現錯誤的字元。
 
 根據BIP-173規範，這裡是一些 bech32 地址的示例:
 
@@ -962,13 +962,13 @@ Testnet P2WPKH:: tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx
 Mainnet P2WSH:: bc1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qccfmv3
 Testnet P2WSH:: tb1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q0sl5k7
 
-如你所見，segwit bech32字串長達90個字符，由三個部分組成:
+如你所見，segwit bech32字串長達90個字元，由三個部分組成:
 
 人類可讀的部分:: "bc" 或 "tb" 標明主網（ mainnet ）還是測試網（ testnet ）。
 
-分隔符:: 數字 "1", 不是32字符編碼集的一部分，只當做分隔符出現。
+分隔符:: 數字 "1", 不是32字元編碼集的一部分，只當做分隔符出現。
 
-數據部分:: 至少6個字母數字字符，校驗和編碼的見證腳本
+數據部分:: 至少6個字母數字字元，校驗和編碼的見證腳本
 
 此時，只有少數錢包接受或生成原生segwit bech32地址，但隨著segwit的廣泛使用，你將越來越多地看到這些地址。
 
