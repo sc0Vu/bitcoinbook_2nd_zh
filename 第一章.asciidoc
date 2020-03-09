@@ -4,7 +4,7 @@
 
 === 什麼是比特幣
 
-((("bitcoin", "defined", id="GSdefine01")))比特幣是組成數字貨幣生態的一系列概念和技術的集合。 比特幣也用作在比特幣網路的參與者之間儲存和傳遞價值的貨幣單位。 比特幣用戶主要通過互聯網使用比特幣協議進行通信，當然，也可以使用其他傳輸網路。 比特幣協議堆疊是開源的，易於使用，可運行在各種計算設備上，包括筆記本電腦和智能手機。
+((("bitcoin", "defined", id="GSdefine01")))比特幣是組成數字貨幣生態的一系列概念和技術的集合。 比特幣也用作在比特幣網路的參與者之間儲存和傳遞價值的貨幣單位。 比特幣用戶主要通過互聯網使用比特幣協議進行通信，當然，也可以使用其他傳輸網路。 比特幣協議堆疊是開源的，易於使用，可運行在各種計算設備上，包括筆記本電腦和智慧型手機。
 
 用戶可以通過比特幣完成傳統貨幣可以完成的任何事情，包括購買和出售商品，向人們或組織匯款，或延長信貸。 用戶可以在專門的交易所購買、出售比特幣，與其他貨幣進行兌換。 某種意義上，比特幣是互聯網金錢的完美形式，因為它是快速，安全和無邊界的。
 
@@ -51,7 +51,7 @@
 
 === 比特幣的歷史
 
-((("Nakamoto, Satoshi")))((("distributed computing")))((("bitcoin", "history of")))比特幣是在2008年隨著一篇署名中本聰的論文 "Bitcoin: A Peer-to-Peer Electronic Cash System,"footnote:["Bitcoin: A Peer-to-Peer Electronic Cash System," Satoshi Nakamoto (https://bitcoin.org/bitcoin.pdf).] 的發表誕生的 (see [satoshi_whitepaper](https://bitcoin.org/bitcoin.pdf)). 中本聰結合了b-money和HashCash等之前幾個發明，創造了一個完全去中心化的的電子現金系統，它不依賴於中央機構進行貨幣發行、交易結算和確認。 關鍵性的創新是使用分佈式計算系統（ Proof-of-Work（工作證明）演算法）每10分鐘進行一次全局“選舉”，從而使去中心化網路就交易狀態達成共識。 這個方法優雅地解決了雙重支付（一筆現金可以支付兩次）問題。在之前，雙重支付問題是數字貨幣的弱點，通常通過中央機構清算所有交易解決。
+((("Nakamoto, Satoshi")))((("distributed computing")))((("bitcoin", "history of")))比特幣是在2008年隨著一篇署名中本聰的論文 "Bitcoin: A Peer-to-Peer Electronic Cash System,"footnote:["Bitcoin: A Peer-to-Peer Electronic Cash System," Satoshi Nakamoto (https://bitcoin.org/bitcoin.pdf).] 的發表誕生的 (see [satoshi_whitepaper](https://bitcoin.org/bitcoin.pdf). 中本聰結合了b-money和HashCash等之前幾個發明，創造了一個完全去中心化的的電子現金系統，它不依賴於中央機構進行貨幣發行、交易結算和確認。 關鍵性的創新是使用分佈式計算系統（ Proof-of-Work（工作證明）演算法）每10分鐘進行一次全局“選舉”，從而使去中心化網路就交易狀態達成共識。 這個方法優雅地解決了雙重支付（一筆現金可以支付兩次）問題。在之前，雙重支付問題是數字貨幣的弱點，通常通過中央機構清算所有交易解決。
 
 比特幣網路於2009年上線，基於中本聰發佈的一個參考實現並由許多其他開發者修訂。 為比特幣提供安全性和可靠性的Proof-of-Work演算法（挖礦演算法）的算力呈指數型增長，現在已經超過了世界上頂尖的超級電腦的算力。 比特幣的市值曾超過1350億美元。目前最大的一筆交易是4億美元，即時到賬，手續費1美元。
 
@@ -158,7 +158,7 @@ Alice現在準備開始使用她的新比特幣錢包了。((("", startref="GSqu
 * 找一個有比特幣的朋友，直接向他買一些。許多比特幣用戶以這種方式開始。這種方法最簡單。與擁有比特幣的人見面的一種方式是參加在 https://bitcoin.meetup.com[Meetup.com]列出的本地比特幣聚會。
 * 使用分類服務，例如 pass:[<a class="orm:hideurl" href="https://localbitcoins.com/">localbitcoins.com</a>] 找到你所在地區的賣家以現金購買比特幣。
 * 通過銷售產品或服務賺取比特幣。如果你是開發者，就賣你的編程技能。如果你是理髮師，就剪頭髮收比特幣。
-* ((("Coin ATM Radar")))((("ATMs, locating")))使用比特幣ATM。比特幣ATM是一種接受現金並將比特幣發送到智能手機比特幣錢包的機器。使用 http://coinatmradar.com[Coin ATM Radar] 的在線地圖查找附近的比特幣ATM。
+* ((("Coin ATM Radar")))((("ATMs, locating")))使用比特幣ATM。比特幣ATM是一種接受現金並將比特幣發送到智慧型手機比特幣錢包的機器。使用 http://coinatmradar.com[Coin ATM Radar] 的在線地圖查找附近的比特幣ATM。
 * ((("exchange rates", "listing services")))使用比特幣交易所。許多國家現在有交易所，為買賣雙方提供以當地貨幣交換比特幣的市場。 Exchange-rate服務（例如 https://bitcoinaverage.com[BitcoinAverage]）可以顯示每種貨幣的比特幣交易所列表。
 
 [TIP]
@@ -188,12 +188,12 @@ http://bit.ly/cmebrr[Chicago Mercantile Exchange Bitcoin Reference Rate]:: 可�
 
 ((("getting started", "sending and receiving bitcoin", id="GSsend01")))((("spending bitcoin", "bitcoin wallet quick start example")))((("spending bitcoin", see="also transactions"))) Alice 決定兌換10美元的比特幣，以免在這項新技術上冒太多風險。她給了Joe 10美元現金，打開她的Mycelium錢包應用程式，並選擇Receive。這顯示了Alice的第一個比特幣地址的QR碼。
 
-Joe在他的智能手機錢包上選擇“Send”，然後看到包含兩個輸入的界面：
+Joe在他的智慧型手機錢包上選擇“Send”，然後看到包含兩個輸入的界面：
 
 * 目標比特幣地址
 * 要發送的數量，以BTC或者他的本地貨幣（USD）為單位。
 
-在比特幣地址的輸入欄位中，有一個看起來像二維碼的小圖標。這使得Joe可以用他的手機攝像頭掃描條碼，這樣他就不必輸入Alice的比特幣地址，這個地址很長很難敲。Joe點擊二維碼圖標激活智能手機攝像頭，掃描Alice手機上顯示的二維碼。
+在比特幣地址的輸入欄位中，有一個看起來像二維碼的小圖標。這使得Joe可以用他的手機攝像頭掃描條碼，這樣他就不必輸入Alice的比特幣地址，這個地址很長很難敲。Joe點擊二維碼圖標激活智慧型手機攝像頭，掃描Alice手機上顯示的二維碼。
 
 Joe現在已經將Alice的比特幣地址設置為收件人了。Joe輸入金額為10美元，他的錢包通過訪問在線服務的最新匯率來轉換它。當時的匯率是每比特幣100美元，所以10美元價值0.10比特幣（BTC）或100毫比特幣（mBTC），如Joe的錢包截圖所示 (see <<airbitz-mobile-send>>).
 
