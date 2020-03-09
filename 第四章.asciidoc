@@ -61,7 +61,7 @@ image::images/mbc2_0401.png["privk_to_pubK_to_addressA"]
 
 ===== 通過隨機數生成私鑰
 
-生成密鑰的第一步也是最重要的一步是找到一個安全的熵源或隨機數。創建比特幣私鑰本質上與＂選擇一個1到2^256^之間的數字＂相同。只要保證不可預測性和不可重複性，用於選擇該數字的確切方法並不重要。比特幣軟體使用底層操作系統的隨機數生成器生成256位的私鑰（隨機數）。通常，操作系統隨機數生成器是由一個人為的隨機源進行初始化的，這就是為什麼你可能會被要求將鼠標擺動幾秒鐘。
+生成密鑰的第一步也是最重要的一步是找到一個安全的熵源或隨機數。創建比特幣私鑰本質上與＂選擇一個1到2^256^之間的數字＂相同。只要保證不可預測性和不可重複性，用於選擇該數字的確切方法並不重要。比特幣軟體使用底層作業系統的隨機數生成器生成256位的私鑰（隨機數）。通常，作業系統隨機數生成器是由一個人為的隨機源進行初始化的，這就是為什麼你可能會被要求將鼠標擺動幾秒鐘。
 
 更具體地來說，私鑰可以是 +0+ 到 +n-1+ 的任何數字，這裡n是一個常數 (n = 1.1578 * 10^77^, 略小於 2^256^) 定義為比特幣中使用的橢圓曲線的階數 (see <<elliptic_curve>>)。為了創建這樣的密鑰，我們隨機選擇一個256位的數字並檢查它是否小於+n+。從寫程式的角度說，通常是通過從密碼學安全的隨機源收集的大量隨機數輸入SHA256雜湊演算法中，該演算法將產生256位的數字。如果結果小於+n+，我們就找到了一個合適的私鑰。否則，我們只需使用另一個隨機數再次嘗試。
 
@@ -599,7 +599,7 @@ include::code/ec-math.py[]
 
 [NOTE]
 ====
-<<ec_math>> ((("random numbers", "os.urandom", see="entropy")))((("entropy", "os.urandom", see="random numbers")))((("random numbers", "random number generation")))((("entropy", "random number generation")))使用 +os.urandom+, 體現了底層操作系統提供的密碼學安全的隨機數生成器（CSRNG）。警告：根據操作系統的不同，+os.urandom+ 可能無法以足夠的安全性，並且可能不適合生成高質量的比特幣密鑰。((("", startref="KApython04")))
+<<ec_math>> ((("random numbers", "os.urandom", see="entropy")))((("entropy", "os.urandom", see="random numbers")))((("random numbers", "random number generation")))((("entropy", "random number generation")))使用 +os.urandom+, 體現了底層作業系統提供的密碼學安全的隨機數生成器（CSRNG）。警告：根據作業系統的不同，+os.urandom+ 可能無法以足夠的安全性，並且可能不適合生成高質量的比特幣密鑰。((("", startref="KApython04")))
 ====
 
 [[ec_math_run]]
@@ -737,7 +737,7 @@ include::code/vanity-miner.cpp[]
 
 [NOTE]
 ====
-<<vanity_miner_run>> 使用 +std::random_device+. 根據具體實現不同，它可能反映了底層操作系統提供的CSRNG。在類Unix等操作系統的情況下，它從+/dev/urandom+中提取。這裡使用的隨機數生成器用於演示目的，它不適合生成生產環境質量要求的比特幣密鑰，因為它沒有足夠的安全性來實現。
+<<vanity_miner_run>> 使用 +std::random_device+. 根據具體實現不同，它可能反映了底層作業系統提供的CSRNG。在類Unix等作業系統的情況下，它從+/dev/urandom+中提取。這裡使用的隨機數生成器用於演示目的，它不適合生成生產環境質量要求的比特幣密鑰，因為它沒有足夠的安全性來實現。
 ====
 
 示例程式碼必須使用 pass:[C ++] 編譯器編譯並鏈接libbitcoin庫（必須先安裝在該系統上）。要運行該示例，請運行不帶參數的 ++vanity-miner++ 可執行檔案（參見<<vanity_miner_run>>），它將嘗試查找以＂1kid＂開頭的虛擬地址。
@@ -804,7 +804,7 @@ Eugenia 可以發佈一個隨機生成的地址（例如 +1J7mdg5rbQyUHENYdx39WV
 |1424C2F4bC9JidNjjTUZCbUxv6Sa1Mt62x|5J3mBbAH58CpQ3Y5RNJpUKPE62SQ5tfcvU2JpbnkeyhfsYB1Jcn
 |=======================
 
-例如位於_bitaddress.org_的客戶端JavaScript生成器的工具可以輕鬆生成紙錢包。此頁面包含生成密鑰和紙錢包所需的全部程式碼，即使與互聯網完全斷開。要使用它，請將HTML頁面保存在本地硬盤或外部USB儲存上，斷開互聯網並在瀏覽器中打開它。更好的是，使用乾淨的操作系統啟動電腦，例如可以從CD-ROM啟動的Linux操作系統。離線時使用此工具生成的任何密鑰都可以通過USB（非無線）在本地打印機上打印，從而創建紙錢包，其密鑰僅存在於紙張上，從未儲存在任何在線系統上。將這些紙錢包放入防火保險櫃中，並將比特幣＂發送＂至其比特幣地址，以實施簡單而高效的＂冷儲存＂解決方案。 <<paper_wallet_simple>> 展示了從bitaddress.org網站生成的紙錢包.
+例如位於_bitaddress.org_的客戶端JavaScript生成器的工具可以輕鬆生成紙錢包。此頁面包含生成密鑰和紙錢包所需的全部程式碼，即使與互聯網完全斷開。要使用它，請將HTML頁面保存在本地硬盤或外部USB儲存上，斷開互聯網並在瀏覽器中打開它。更好的是，使用乾淨的作業系統啟動電腦，例如可以從CD-ROM啟動的Linux作業系統。離線時使用此工具生成的任何密鑰都可以通過USB（非無線）在本地打印機上打印，從而創建紙錢包，其密鑰僅存在於紙張上，從未儲存在任何在線系統上。將這些紙錢包放入防火保險櫃中，並將比特幣＂發送＂至其比特幣地址，以實施簡單而高效的＂冷儲存＂解決方案。 <<paper_wallet_simple>> 展示了從bitaddress.org網站生成的紙錢包.
 
 [[paper_wallet_simple]]
 .An example of a simple paper wallet from bitaddress.org
