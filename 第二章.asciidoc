@@ -1,7 +1,7 @@
 [[ch02_bitcoin_overview]]
 == 比特幣如何運轉
 
-=== 交易，區塊，挖礦和區塊鏈
+=== 交易、區塊、挖礦和區塊鏈
 
 ((("bitcoin", "overview of", id="BCover02")))((("central trusted authority")))((("decentralized systems", "bitcoin overview", id="DCSover02")))
 與傳統的銀行和支付系統不同，比特幣系統基於去中心化的信任。在比特幣中，信任是比特幣系統中不同參與者的交互的湧現特性達成的。
