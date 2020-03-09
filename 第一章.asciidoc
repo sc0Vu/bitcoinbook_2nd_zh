@@ -121,7 +121,7 @@ Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品
 
 結合這些分類，許多比特幣錢包會被分入多個組內，其中最常見的三種是桌面完整客戶端，移動輕量級錢包和第三方網路錢包。不同類別之間的界限通常很模糊，因為許多錢包在多個平臺上運行，並且可能以不同的方式與網路進行交互。
 
-為了本書的目的，我們將演示使用各種可下載的比特幣客戶端，從參考實現（Bitcoin Core）到移動錢包和網路錢包。一些例子將需要使用Bitcoin Core，除了作為一個完整的客戶端之外，它還將API暴露給錢包，網路和交易服務。如果你計劃探索比特幣系統的編程接口，則需要運行Bitcoin Core或其他客戶端之一。((("", startref="GSwallet01")))((("", startref="Wselect01")))
+為了本書的目的，我們將演示使用各種可下載的比特幣客戶端，從參考實現（Bitcoin Core）到移動錢包和網路錢包。一些例子將需要使用Bitcoin Core，除了作為一個完整的客戶端之外，它還將API暴露給錢包，網路和交易服務。如果你計劃探索比特幣系統的程式化介面，則需要運行Bitcoin Core或其他客戶端之一。((("", startref="GSwallet01")))((("", startref="Wselect01")))
 
 ==== 快速開始
 
@@ -157,7 +157,7 @@ Alice現在準備開始使用她的新比特幣錢包了。((("", startref="GSqu
 
 * 找一個有比特幣的朋友，直接向他買一些。許多比特幣用戶以這種方式開始。這種方法最簡單。與擁有比特幣的人見面的一種方式是參加在 https://bitcoin.meetup.com[Meetup.com]列出的本地比特幣聚會。
 * 使用分類服務，例如 pass:[<a class="orm:hideurl" href="https://localbitcoins.com/">localbitcoins.com</a>] 找到你所在地區的賣家以現金購買比特幣。
-* 通過銷售產品或服務賺取比特幣。如果你是開發者，就賣你的編程技能。如果你是理髮師，就剪頭髮收比特幣。
+* 通過銷售產品或服務賺取比特幣。如果你是開發者，就賣你的寫程式技能。如果你是理髮師，就剪頭髮收比特幣。
 * ((("Coin ATM Radar")))((("ATMs, locating")))使用比特幣ATM。比特幣ATM是一種接受現金並將比特幣發送到智慧型手機比特幣錢包的機器。使用 http://coinatmradar.com[Coin ATM Radar] 的在線地圖查找附近的比特幣ATM。
 * ((("exchange rates", "listing services")))使用比特幣交易所。許多國家現在有交易所，為買賣雙方提供以當地貨幣交換比特幣的市場。 Exchange-rate服務（例如 https://bitcoinaverage.com[BitcoinAverage]）可以顯示每種貨幣的比特幣交易所列表。
 

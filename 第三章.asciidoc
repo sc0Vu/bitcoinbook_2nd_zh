@@ -297,7 +297,7 @@ datadir:: 放置所有區塊鏈數據的目錄。預設情況下，這是你的�
 
 prune:: 通過刪除舊的區塊，將硬碟空間需求減少到多少MB。在不適合存放完整區塊鏈的資源受限節點上使用它。
 
-txindex:: 維護所有交易的索引。這意味著，允許你以編程方式通過ID檢索一個完整的區塊鏈副本的任何交易。
+txindex:: 維護所有交易的索引。這意味著，允許你以程式化的方式通過ID檢索一個完整的區塊鏈副本的任何交易。
 
 dbcache:: UTXO緩存的大小。預設值是300MB。在高端硬體上增加該值，在低端硬體上減少該值的大小以節省內存，但會導致更多硬碟開銷。
 
@@ -411,7 +411,7 @@ $ bitcoin-cli getblockchaininfo
 
 === Bitcoin Core API
 
-((("Bitcoin Core", "Bitcoin Core API", id="BCapi03")))Bitcoin Core 客戶端實現了JSON-RPC接口，也可以使用命令行工具 +bitcoin-cli+ 來訪問。命令行允許我們以交互的方式試驗通過API方式提供的功能。 ((("Bitcoin Core", "Bitcoin Core API", "RPC commands")))首先，調用 +help+ 命令查看可用比特幣RPC命令的列表：
+((("Bitcoin Core", "Bitcoin Core API", id="BCapi03")))Bitcoin Core 客戶端實現了JSON-RPC介面，也可以使用命令行工具 +bitcoin-cli+ 來訪問。命令行允許我們以交互的方式試驗通過API方式提供的功能。 ((("Bitcoin Core", "Bitcoin Core API", "RPC commands")))首先，調用 +help+ 命令查看可用比特幣RPC命令的列表：
 
 [[bitcoind_commands]]
 ----
@@ -462,7 +462,7 @@ $ bitcoin-cli getblockhash 1000
 
 ==== 獲得Bitcoin Core客戶端的狀態訊息
 
-((("Bitcoin Core", "Bitcoin Core API", "status information")))Bitcoin Core 通過 JSON-RPC 接口提供不同模塊的狀態報告。最重要的命令包括 +getblockchaininfo+, +getmempoolinfo+, +getnetworkinfo+ 和 +getwalletinfo+。
+((("Bitcoin Core", "Bitcoin Core API", "status information")))Bitcoin Core 通過 JSON-RPC 介面提供不同模塊的狀態報告。最重要的命令包括 +getblockchaininfo+, +getmempoolinfo+, +getnetworkinfo+ 和 +getwalletinfo+。
 
 比特幣的 +getblockchaininfo+ RPC 命令之前已經介紹了。+getnetworkinfo+ 命令用於展示比特幣網路節點的基本狀態訊息。使用 +bitcoin-cli+ 調用:
 
@@ -662,11 +662,11 @@ $ bitcoin-cli getblock 0000000000000001b6b9a13b095e96db41c4a928b97ef2d944a9b3&#x
 
 這個區塊包含 419 筆交易，第64個交易（+0627052b...+）是Alice的交易。+height+ 欄位告訴我們它是區塊鏈中的第277316個區塊。
 
-==== 使用Bitcoin Core的編程接口
+==== 使用Bitcoin Core的程式化介面
 
-((("Bitcoin Core", "Bitcoin Core API", "using programmatic interface")))((("programmatic interface", id="progint03")))+bitcoin-cli+ 助手對於探索Bitcoin Core API和測試功能非常有用。但API的重要功能是以編程方式訪問。在本節中，我們將演示如何通過另一個程序訪問Bitcoin Core。
+((("Bitcoin Core", "Bitcoin Core API", "using programmatic interface")))((("programmatic interface", id="progint03")))+bitcoin-cli+ 助手對於探索Bitcoin Core API和測試功能非常有用。但API的重要功能是以寫程式方式訪問。在本節中，我們將演示如何通過另一個程序訪問Bitcoin Core。
 
-Bitcoin Core的API是JSON-RPC接口. JSON代表JavaScript Object Notation，是一種非常方便人類和程序閱讀的數據格式。RPC代表遠程過程調用，這意味著我們通過網路協議調用遠程（在Bitcoin Core節點上的）函數。在這種情況下，網路協議是HTTP或HTTPS（用於加密連接）。
+Bitcoin Core的API是JSON-RPC介面. JSON代表JavaScript Object Notation，是一種非常方便人類和程序閱讀的數據格式。RPC代表遠程過程調用，這意味著我們通過網路協議調用遠程（在Bitcoin Core節點上的）函數。在這種情況下，網路協議是HTTP或HTTPS（用於加密連接）。
 
 當我們使用 +bitcoin-cli+ 命令獲取命令幫助時，它向我們展示了使用 +curl+（常用的命令行HTTP客戶端）構造JSON-RPC調用的示例：
 
@@ -721,7 +721,7 @@ $ python rpc_transaction.py
 ([u'1Cdid9KFAaatwczBwBttQcwXYCpvK8h7FK'], Decimal('0.08450000'))
 ----
 
-前面的兩個例子都很簡單。你並不需要寫程序來運行它們；你可以輕鬆使用 +bitcoin-cli+ 助手。然而，下一個例子需要幾百次RPC調用，更清楚地說明了編程接口的作用。
+前面的兩個例子都很簡單。你並不需要寫程序來運行它們；你可以輕鬆使用 +bitcoin-cli+ 助手。然而，下一個例子需要幾百次RPC調用，更清楚地說明了程式化介面的作用。
 
 在 <<rpc_block>> 中，我們首先檢索第277316個區塊，然後使用交易ID檢索區塊內419個交易中的每一個。接下來，我們遍歷每筆交易的輸出並累加起來。((("", startref="alicethree")))
 
@@ -747,7 +747,7 @@ $ python rpc_block.py
 [[alt_libraries]]
 === 可選的客戶端、程序庫和工具包
 
-((("Bitcoin Core", "alternatives to", id="BCalt03")))((("clients, libraries, and toolkits", id="clients03")))((("libraries, clients, and toolkits", id="librar03")))((("toolkits, libraries, and clients", id="toolkit03")))((("third-party API clients", id="thirdpart03")))比特幣生態系統中有許多可選的客戶端，程序庫和工具包，甚至是完整節點的實現。它們以各種程式語言實現，為開發者提供其首選程式語言的原生接口。
+((("Bitcoin Core", "alternatives to", id="BCalt03")))((("clients, libraries, and toolkits", id="clients03")))((("libraries, clients, and toolkits", id="librar03")))((("toolkits, libraries, and clients", id="toolkit03")))((("third-party API clients", id="thirdpart03")))比特幣生態系統中有許多可選的客戶端，程序庫和工具包，甚至是完整節點的實現。它們以各種程式語言實現，為開發者提供其首選程式語言的原生介面。
 
 下面列出了一些：
 
