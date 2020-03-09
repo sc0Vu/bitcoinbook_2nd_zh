@@ -19,7 +19,7 @@
 
 ==== 公鑰加密和密碼貨幣
 
-((("keys and addresses", "overview of", "public key cryptography")))((("digital currencies", "cryptocurrency")))公鑰密碼技術發明於20世紀70年代，是電腦和訊息安全的數學基礎。
+((("keys and addresses", "overview of", "public key cryptography")))((("digital currencies", "cryptocurrency")))公鑰密碼技術發明於20世紀70年代，是電腦和資訊安全的數學基礎。
 
 公鑰密碼技術發明後，發現了一些合適的數學函數，例如質數指數運算和橢圓曲線乘法。這些數學函數實際上是不可逆的，這意味著它們很容易在一個方向上計算，但在相反方向上計算是不可行的。基於這些數學函數，密碼學可以創建數字密鑰和不可偽造的數位簽章。比特幣使用橢圓曲線乘法作為其密碼學的基礎。
 
