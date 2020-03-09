@@ -42,7 +42,7 @@ $1.50 USD
 
 ((("payment requests")))((("QR codes", "payment requests")))Bob的銷售系統也會自動創建一個包含_支付請求（payment request)_的特殊二維碼（參見<<payment-request-QR>>）。
 
-與僅包含目標比特幣地址的二維碼不同，支付請求是URL的二維碼，其包含目標地址，付款金額以及諸如＂Bob's Cafe＂的描述。這允許比特幣錢包應用預先填充用於發送付款的訊息，同時向用戶顯示可讀的訊息。你可以使用比特幣錢包應用掃描二維碼，以查看Alice會看到的內容。
+與僅包含目標比特幣地址的二維碼不同，支付請求是URL的二維碼，其包含目標地址、付款金額以及諸如＂Bob's Cafe＂的描述。這允許比特幣錢包應用預先填充用於發送付款的訊息，同時向用戶顯示可讀的訊息。你可以使用比特幣錢包應用掃描二維碼，以查看Alice會看到的內容。
 
 [[payment-request-QR]]
 .Payment request QR code
@@ -87,7 +87,7 @@ https://blockchain.info/tx/0627052b6f28912f2703066a912ea577f2ce4da4caa5a5fbd8a57
 
 === 比特幣交易
 
-((("transactions", "defined")))簡而言之，一筆交易告訴網路，一些比特幣價值的所有者已經授權將該價值轉移給另一個所有者。新的所有者現在可以通過創建另一個授權轉讓給另一個所有者的交易來支付比特幣，等等。
+((("transactions", "defined")))簡而言之，一筆交易告訴網路，一些比特幣價值的所有者已經授權將該價值轉移給另一個所有者。新的所有者現在可以通過創建另一個授權轉讓給另一個所有者的交易來支付比特幣等等。
 
 ==== 交易的輸入和輸出
 
@@ -279,4 +279,4 @@ Bob現在可以花費這筆交易和其他交易的輸出了。例如，Bob可�
 .Alice's transaction as part of a transaction chain from Joe to Gopesh
 image::images/mbc2_0210.png["Alice's transaction as part of a transaction chain"]
 
-在本章中，我們看到交易如何建立一個鏈條，將價值從一個所有者轉移到另一個所有者。我們還追蹤了Alice的交易，在她的錢包中創建，傳輸到比特幣網路，礦工將其記錄在區塊鏈上。在本書的其餘部分，我們將研究錢包，地址，簽名，交易，網路以及挖礦背後的具體技術。((("", startref="BCover02")))((("", startref="DCSover02"))) ((("", startref="UCcoffee02")))
+在本章中，我們看到交易如何建立一個鏈條，將價值從一個所有者轉移到另一個所有者。我們還追蹤了Alice的交易，在她的錢包中創建，傳輸到比特幣網路，礦工將其記錄在區塊鏈上。在本書的其餘部分，我們將研究錢包、地址、簽名、交易、網路以及挖礦背後的具體技術。((("", startref="BCover02")))((("", startref="DCSover02"))) ((("", startref="UCcoffee02")))
