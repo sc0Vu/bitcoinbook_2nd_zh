@@ -77,7 +77,7 @@
 
 硬分叉（hard fork）::
   硬分叉（Hard fork)，也叫做硬分叉更改（Hard-Forking Change)，是區塊鏈中的一種永久分歧，通常發生於未升級的節點無法驗證升級節點創建的區塊時。
-  不要與分叉（fork），軟分叉（soft fork），軟體分叉（software fork）或Git分叉（git fork）混淆。
+  不要與分叉（fork）、軟分叉（soft fork）、軟體分叉（software fork）或Git分叉（git fork）混淆。
 
 硬體錢包（hardware wallet）::
     硬體錢包是一種特殊類型的比特幣錢包，它將用戶的私鑰儲存在安全的硬體設備中。
