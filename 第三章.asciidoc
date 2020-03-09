@@ -29,7 +29,7 @@ image::images/mbc2_0301.png["Bitcoin Core Architecture"]
 
 [TIP]
 ====
-((("$ symbol")))((("shell commands")))((("terminal applications")))在本章的許多示例中，我們將使用操作系統的命令行界面（也稱為“shell”），通過“終端”應用程式訪問它，shell將顯示一個提示符；你輸入一個命令；shell會為你的下一個命令返回一些文本和一個新的提示符。提示可能在你的系統上看起來不同，但在以下示例中，它由 +$+ 號表示。在示例中，當你在 +$+ 符號後面看到文本時，請勿鍵入 +$+ 符號，而是在其後面緊接著輸入命令，然後按Enter執行該命令。在示例中，每條命令下面的行是操作系統對該命令的響應。當你看到下一個 +$+ 前綴時，你應該知道這是一個新的命令行，你可以重複這個過程。
+((("$ symbol")))((("shell commands")))((("terminal applications")))在本章的許多示例中，我們將使用操作系統的命令行界面（也稱為＂shell＂），通過＂終端＂應用程式訪問它，shell將顯示一個提示符；你輸入一個命令；shell會為你的下一個命令返回一些文本和一個新的提示符。提示可能在你的系統上看起來不同，但在以下示例中，它由 +$+ 號表示。在示例中，當你在 +$+ 符號後面看到文本時，請勿鍵入 +$+ 符號，而是在其後面緊接著輸入命令，然後按Enter執行該命令。在示例中，每條命令下面的行是操作系統對該命令的響應。當你看到下一個 +$+ 前綴時，你應該知道這是一個新的命令行，你可以重複這個過程。
 ====
 
 ((("cloning source code")))((("source code, cloning", seealso="Bitcoin Core")))在這個例子中，我們使用 +git+ 命令創建源程式碼的本地副本。
@@ -72,14 +72,14 @@ v0.12.0rc2
 ...
 ----
 
-標籤列表顯示比特幣的所有發行版本。按照慣例，用於測試的_發行預覽版（release candidates）_具有後綴“rc”。可以在生產系統上運行的穩定版本沒有後綴。從上面的列表中選擇最高版本的發行版本，在撰寫本文時是v0.15.0。要使本地程式碼與此版本同步，請使用 +git checkout+ 命令：
+標籤列表顯示比特幣的所有發行版本。按照慣例，用於測試的_發行預覽版（release candidates）_具有後綴＂rc＂。可以在生產系統上運行的穩定版本沒有後綴。從上面的列表中選擇最高版本的發行版本，在撰寫本文時是v0.15.0。要使本地程式碼與此版本同步，請使用 +git checkout+ 命令：
 
 ----
 $ git checkout v0.15.0
 HEAD is now at 3751912... Merge #11295: doc: Old fee_estimates.dat are discarded by 0.15.0
 ----
 
-你可以通過命令 +git status+ 來確認你已經“檢出”了所需的版本：
+你可以通過命令 +git status+ 來確認你已經＂檢出＂了所需的版本：
 
 ----
 $ git status
@@ -218,7 +218,7 @@ $ which bitcoin-cli
 
 === 運行Bitcoin Core節點
 
-((("Bitcoin Core", "running core nodes", id="BCnode03")))((("bitcoin nodes", "running core nodes", id="BNcore03")))比特幣的點對點網路由網路“節點”組成，主要由志願者和一些構建比特幣應用的企業運行。那些運行比特幣節點的人對比特幣區塊鏈擁有直接和權威的視野，並擁有所有交易的本地副本，由他們自己的系統進行獨立驗證。通過運行節點，你可以不依靠任何第三方來驗證交易。此外，你還可以通過增強比特幣網路的能力，為比特幣網路做出貢獻。
+((("Bitcoin Core", "running core nodes", id="BCnode03")))((("bitcoin nodes", "running core nodes", id="BNcore03")))比特幣的點對點網路由網路＂節點＂組成，主要由志願者和一些構建比特幣應用的企業運行。那些運行比特幣節點的人對比特幣區塊鏈擁有直接和權威的視野，並擁有所有交易的本地副本，由他們自己的系統進行獨立驗證。通過運行節點，你可以不依靠任何第三方來驗證交易。此外，你還可以通過增強比特幣網路的能力，為比特幣網路做出貢獻。
 
 然而，運行一個節點，需要有足夠資源來處理所有比特幣交易的永久的可連接的系統。取決於你是否選擇索引所有交易並保存區塊鏈的完整副本，你可能還需要大量的硬碟空間和內存。 在2018年初，一個全部索引的節點需要至少2GB內存和160GB硬盤空間（參見 https://blockchain.info/charts/blocks-size[]）。比特幣節點也需要網路帶寬來傳輸和接收比特幣交易和區塊。如果你的網路帶寬有限，則你可能不應該在其上運行比特幣節點，或者以限制其帶寬的方式運行它（參見 <<constrained_resources>>）。
 
@@ -497,7 +497,7 @@ $ bitcoin-cli getnetworkinfo
 
 [TIP]
 ====
-+bitcoind+客戶端來說，它需要一段時間（或許超過一天的時間）“趕上”當前區塊鏈高度，因為它從其他比特幣客戶端下載區塊。你可以使用 +getblockchaininfo+ 來查看其進度，以查看已知區塊的數量。
++bitcoind+客戶端來說，它需要一段時間（或許超過一天的時間）＂趕上＂當前區塊鏈高度，因為它從其他比特幣客戶端下載區塊。你可以使用 +getblockchaininfo+ 來查看其進度，以查看已知區塊的數量。
 ====
 
 [[exploring_and_decoding_transanctions]]
@@ -524,7 +524,7 @@ ae24cb02204b9f039ff08df09cbe9f6addac960298cad530a863ea8f53982c09db8f6e3813014&#x
 
 [TIP]
 ====
-((("transaction IDs (txd)")))((("malleability")))在交易確認之前，交易ID不是可信的。區塊鏈中沒有交易的雜湊值並不意味著交易未處理。這被稱為“交易延展性（transaction malleability）”，因為在區塊中確認之前，交易的雜湊可以被修改。確認後，+txid+ 是不可變的和可信的。
+((("transaction IDs (txd)")))((("malleability")))在交易確認之前，交易ID不是可信的。區塊鏈中沒有交易的雜湊值並不意味著交易未處理。這被稱為＂交易延展性（transaction malleability）＂，因為在區塊中確認之前，交易的雜湊可以被修改。確認後，+txid+ 是不可變的和可信的。
 ====
 
 +getrawtransaction+ 命令以十六進制返回一個序列化的交易。將它作為 +decoderawtransaction+ 命令的參數可以解碼：
@@ -680,7 +680,7 @@ $ curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "met
 
 你可以正在自己的程序中使用HTTP庫來實現JSON-RPC調用，類似於前面的 +curl+ 示例。
 
-然而，大多數程式語言都有一些“包裝”了比特幣核心API的庫，簡便很多。我們將使用 +python-bitcoinlib+ 庫來簡化API訪問。你需要有一個正在運行的Bitcoin Core實例，用於進行JSON-RPC調用。
+然而，大多數程式語言都有一些＂包裝＂了比特幣核心API的庫，簡便很多。我們將使用 +python-bitcoinlib+ 庫來簡化API訪問。你需要有一個正在運行的Bitcoin Core實例，用於進行JSON-RPC調用。
 
 <<rpc_example>> 中的Python腳本調用 +getblockchaininfo+ 並打印返回數據中的區塊個數。
 

@@ -33,7 +33,7 @@
 使用數據位代表交換物品和服務的價值的想法並不奇怪，但想讓人接受數字貨幣，要面對3個基本問題：
 
 1.     可以相信這筆錢是真實的，而不是偽造的嗎？
-2.     可以確定數字貨幣只能使用一次嗎？（俗稱“雙重支付”，“雙花”問題）
+2.     可以確定數字貨幣只能使用一次嗎？（俗稱＂雙重支付＂，＂雙花＂問題）
 3.     可以確保除了我以外，沒有人可以聲稱我的一筆錢屬於他們嗎？
 
 紙幣發行者使用日益複雜的紙張和印刷技術來對抗偽造問題。物理貨幣可以輕易解決雙重支付問題，因為同一張紙幣不可能在兩個地方出現。當然，傳統貨幣也經常以數字方式儲存和傳輸。
@@ -51,7 +51,7 @@
 
 === 比特幣的歷史
 
-((("Nakamoto, Satoshi")))((("distributed computing")))((("bitcoin", "history of")))比特幣是在2008年隨著一篇署名中本聰的論文 "Bitcoin: A Peer-to-Peer Electronic Cash System,"footnote:["Bitcoin: A Peer-to-Peer Electronic Cash System," Satoshi Nakamoto (https://bitcoin.org/bitcoin.pdf).] 的發表誕生的 (see [satoshi_whitepaper](https://bitcoin.org/bitcoin.pdf). 中本聰結合了b-money和HashCash等之前幾個發明，創造了一個完全去中心化的的電子現金系統，它不依賴於中央機構進行貨幣發行、交易結算和確認。 關鍵性的創新是使用分佈式計算系統（ Proof-of-Work（工作證明）演算法）每10分鐘進行一次全局“選舉”，從而使去中心化網路就交易狀態達成共識。 這個方法優雅地解決了雙重支付（一筆現金可以支付兩次）問題。在之前，雙重支付問題是數字貨幣的弱點，通常通過中央機構清算所有交易解決。
+((("Nakamoto, Satoshi")))((("distributed computing")))((("bitcoin", "history of")))比特幣是在2008年隨著一篇署名中本聰的論文 "Bitcoin: A Peer-to-Peer Electronic Cash System,"footnote:["Bitcoin: A Peer-to-Peer Electronic Cash System," Satoshi Nakamoto (https://bitcoin.org/bitcoin.pdf).] 的發表誕生的 (see [satoshi_whitepaper](https://bitcoin.org/bitcoin.pdf). 中本聰結合了b-money和HashCash等之前幾個發明，創造了一個完全去中心化的的電子現金系統，它不依賴於中央機構進行貨幣發行、交易結算和確認。 關鍵性的創新是使用分佈式計算系統（ Proof-of-Work（工作證明）演算法）每10分鐘進行一次全局＂選舉＂，從而使去中心化網路就交易狀態達成共識。 這個方法優雅地解決了雙重支付（一筆現金可以支付兩次）問題。在之前，雙重支付問題是數字貨幣的弱點，通常通過中央機構清算所有交易解決。
 
 比特幣網路於2009年上線，基於中本聰發佈的一個參考實現並由許多其他開發者修訂。 為比特幣提供安全性和可靠性的Proof-of-Work演算法（挖礦演算法）的算力呈指數型增長，現在已經超過了世界上頂尖的超級電腦的算力。 比特幣的市值曾超過1350億美元。目前最大的一筆交易是4億美元，即時到賬，手續費1美元。
 
@@ -59,7 +59,7 @@
 
 .分佈式計算問題的解決方案
 ****
-((("Byzantine Generals&#x27; Problem")))中本聰的發明也是一個分佈式計算問題的實踐和創新：“拜占庭將軍問題”。簡單來說，這個問題涉及試圖在不可靠且可能受損的網路上交換訊息來達成行動方案或系統狀態的統一。 中本聰的Proof-of-Work的方案，不需要中心化的可信機構，即可達成共識，代表了分佈式計算領域的突破，有著超越數字貨幣的廣泛適用性。 它可以用於在去中心化網路中達成共識，證明選舉，抽獎，資產登記，數字公證等的公平性。
+((("Byzantine Generals&#x27; Problem")))中本聰的發明也是一個分佈式計算問題的實踐和創新：＂拜占庭將軍問題＂。簡單來說，這個問題涉及試圖在不可靠且可能受損的網路上交換訊息來達成行動方案或系統狀態的統一。 中本聰的Proof-of-Work的方案，不需要中心化的可信機構，即可達成共識，代表了分佈式計算領域的突破，有著超越數字貨幣的廣泛適用性。 它可以用於在去中心化網路中達成共識，證明選舉，抽獎，資產登記，數字公證等的公平性。
 ****
 
 [[user-stories]]
@@ -71,7 +71,7 @@
 ((("use cases", "retail sales")))Alice住在北美加利福尼亞灣區。她從技術人員朋友那裡聽說了比特幣之後想嘗試一下。我們將跟隨她的故事，瞭解比特幣，獲取比特幣，花費一些買一杯咖啡。 這個故事將從零售消費者的角度介紹軟體，交易所，和基本交易。
 
 北美高價零售::
-Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品。這個故事將向高價值商品的零售商介紹“51％”共識攻擊的風險。
+Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品。這個故事將向高價值商品的零售商介紹＂51％＂共識攻擊的風險。
 
 離岸合同服務::
 ((("offshore contract services")))((("use cases", "offshore contract services")))帕洛阿爾託的咖啡館老闆Bob正在建設一個新網站。他與居住在印度班加羅爾的一位網路開發人員Gopesh簽約。 Gopesh已同意接受比特幣支付。這個故事將研究比特幣在外包，合同服務和國際電匯方面的用途。
@@ -86,13 +86,13 @@ Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品
 ((("use cases", "import/export")))穆罕默德是迪拜的一家電子產品進口商。他試圖用比特幣從美國和中國購買電子產品進口到阿聯酋，以加快進口支付流程。 這個故事將展示如何將比特幣用於與實體商品相關的大型企業對企業國際支付。
 
 比特幣挖礦::
-((("use cases", "mining for bitcoin")))Jing是上海的電腦工程專業的學生。他已經建立了一個礦機，利用他的工程技能來挖掘比特幣，以獲取額外收入。 這個故事將研究比特幣的“工業”基礎：用於保護比特幣網路和發行新貨幣的專用設備。
+((("use cases", "mining for bitcoin")))Jing是上海的電腦工程專業的學生。他已經建立了一個礦機，利用他的工程技能來挖掘比特幣，以獲取額外收入。 這個故事將研究比特幣的＂工業＂基礎：用於保護比特幣網路和發行新貨幣的專用設備。
 
 每一個故事都基於真實的人和真正的行業，目前正在使用比特幣來創建新的市場，新的行業以及針對全球經濟問題的創新解決方案。((("", startref="GSuses01")))
 
 === 開始
 
-((("getting started", "wallet selection", id="GSwallet01")))((("wallets", "selecting", id="Wselect01")))((("bitcoin", "getting started", id="BCbasic01")))比特幣是一種協議，可以通過使用遵守協議的客戶端訪問。“比特幣錢包”是比特幣系統最常用的用戶界面，就像網路瀏覽器是HTTP協議最常用的用戶界面一樣。 比特幣錢包有很多實現和品牌，就像許多品牌的網路瀏覽器（例如，Chrome，Safari，Firefox和Internet Explorer）一樣。 就像我們都有我們最喜歡的瀏覽器（Mozilla Firefox）和最討厭的瀏覽器（Internet Explorer）一樣，比特幣錢包在質量，性能，安全性，隱私和可靠性方面各不相同。 比特幣協議還有一個源自中本聰編寫的包含錢包的參考實現，名為“Satoshi Client”或“Bitcoin Core”。
+((("getting started", "wallet selection", id="GSwallet01")))((("wallets", "selecting", id="Wselect01")))((("bitcoin", "getting started", id="BCbasic01")))比特幣是一種協議，可以通過使用遵守協議的客戶端訪問。＂比特幣錢包＂是比特幣系統最常用的用戶界面，就像網路瀏覽器是HTTP協議最常用的用戶界面一樣。 比特幣錢包有很多實現和品牌，就像許多品牌的網路瀏覽器（例如，Chrome，Safari，Firefox和Internet Explorer）一樣。 就像我們都有我們最喜歡的瀏覽器（Mozilla Firefox）和最討厭的瀏覽器（Internet Explorer）一樣，比特幣錢包在質量，性能，安全性，隱私和可靠性方面各不相同。 比特幣協議還有一個源自中本聰編寫的包含錢包的參考實現，名為＂Satoshi Client＂或＂Bitcoin Core＂。
 
 ==== 選擇比特幣錢包
 
@@ -113,7 +113,7 @@ Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品
 
 另一種給比特幣錢包分類的方法是根據他們的自治程度以及與如何比特幣網路交互：
 
-完整節點客戶端 (Full-node client):: ((("full-node clients")))一個完整的客戶端或“完整節點”儲存比特幣交易歷史（每個用戶的每次交易），管理用戶的錢包，並且可以直接在比特幣網路上啟動交易。完整節點處理協議的所有方面，並可獨立驗證整個區塊鏈和任何事務。完整節點需要消耗大量電腦資源（例如，超過125 GB的硬碟，2GB的RAM），但可提供完整的自主權和獨立的事務驗證。
+完整節點客戶端 (Full-node client):: ((("full-node clients")))一個完整的客戶端或＂完整節點＂儲存比特幣交易歷史（每個用戶的每次交易），管理用戶的錢包，並且可以直接在比特幣網路上啟動交易。完整節點處理協議的所有方面，並可獨立驗證整個區塊鏈和任何事務。完整節點需要消耗大量電腦資源（例如，超過125 GB的硬碟，2GB的RAM），但可提供完整的自主權和獨立的事務驗證。
 
 輕量級客戶端:: ((("lightweight clients")))((("simple-payment-verification (SPV)")))輕量級客戶端也稱為簡單支付驗證（SPV，Simple-payment-verification）客戶端，連接到比特幣完整節點以訪問比特幣交易訊息，但將用戶錢包本地儲存並獨立創建，驗證和傳輸交易。輕量級客戶端與比特幣網路直接交互，無需中間人。
 
@@ -126,7 +126,7 @@ Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品
 ==== 快速開始
 
 ((("getting started", "quick start example", id="GSquick01")))((("wallets", "quick start example", id="Wquick01")))((("use cases", "buying coffee", id="aliceone")))我們之前介紹的Alice不是技術人員，而且最近才從朋友Joe那聽說比特幣。
-在一次派對上，Joe又一次熱情地向周圍的人講解和演示比特幣。出於好奇，Alice想知道她如何開始使用比特幣。Joe說移動錢包最適合新用戶，並推薦了一些他最喜愛的錢包。Alice便將“Mycelium”安裝到了她的Android手機上。
+在一次派對上，Joe又一次熱情地向周圍的人講解和演示比特幣。出於好奇，Alice想知道她如何開始使用比特幣。Joe說移動錢包最適合新用戶，並推薦了一些他最喜愛的錢包。Alice便將＂Mycelium＂安裝到了她的Android手機上。
 
 當 Alice 第一次運行Mycelium時，程序會自動為她創建一個新錢包。Alice看到的錢包界面，如<<mycelium-welcome>>所示（注意：不要將比特幣發送到此示例地址，它將永遠丟失）。
 
@@ -141,7 +141,7 @@ image::images/mbc2_0101.png["MyceliumWelcome"]
 ((("addresses", "security of")))((("security", "bitcoin addresses")))比特幣地址以"1"或者"3"開頭。就像email地址一樣，它們可以分享給其他比特幣用戶以允許它們向你的錢包發送比特幣。從安全角度來說，比特幣地址不存在任何敏感訊息，他可以被送到任何地方。與email地址不同，你可以經常創建新的比特幣地址，所有的地址都關聯到你的錢包。許多現代錢包會自動為每筆交易創建一個新地址，以最大限度地保護隱私。錢包只是地址和解鎖資金的密鑰集合。
 ====
 
-Alice現在已經準備好接收資金了。她的錢包應用會隨機生成一個私鑰（在<<private_keys>>中更詳細地描述）以及相應的比特幣地址。這時，她的比特幣地址不為比特幣網路所知，或者在比特幣系統的任何部分“註冊”。她的比特幣地址只是一個數字，對應於一個可以用來控制資金訪問權限的密鑰。它是由她的錢包獨立生成的，沒有參考或註冊任何服務。事實上，在大多數錢包中，比特幣地址與包括用戶身份在內的任何外部可識別訊息之間不存在關聯。在比特幣地址被比特幣賬本上發佈的交易引用，作為接收地址之前，它僅僅是比特幣中有效的大量可能的地址的一部分。只有與交易關聯後，它才會成為網路中已知地址的一部分。
+Alice現在已經準備好接收資金了。她的錢包應用會隨機生成一個私鑰（在<<private_keys>>中更詳細地描述）以及相應的比特幣地址。這時，她的比特幣地址不為比特幣網路所知，或者在比特幣系統的任何部分＂註冊＂。她的比特幣地址只是一個數字，對應於一個可以用來控制資金訪問權限的密鑰。它是由她的錢包獨立生成的，沒有參考或註冊任何服務。事實上，在大多數錢包中，比特幣地址與包括用戶身份在內的任何外部可識別訊息之間不存在關聯。在比特幣地址被比特幣賬本上發佈的交易引用，作為接收地址之前，它僅僅是比特幣中有效的大量可能的地址的一部分。只有與交易關聯後，它才會成為網路中已知地址的一部分。
 
 Alice現在準備開始使用她的新比特幣錢包了。((("", startref="GSquick01")))((("", startref="Wquick01")))
 
@@ -171,7 +171,7 @@ Alice是被通過朋友介紹知道比特幣的，因此她可以輕鬆獲得她
 [[bitcoin_price]]
 ==== 查看比特幣的當前價格
 
-((("getting started", "exchange rates")))((("exchange rates", "determining")))在Alice可以從Joe那購買比特幣之前，他們必須同意比特幣和美元之間的匯率。這給那些比特幣新手帶來了一個共同的問題：“誰設定的比特幣價格？” 簡而言之，價格是由市場決定的。
+((("getting started", "exchange rates")))((("exchange rates", "determining")))在Alice可以從Joe那購買比特幣之前，他們必須同意比特幣和美元之間的匯率。這給那些比特幣新手帶來了一個共同的問題：＂誰設定的比特幣價格？＂ 簡而言之，價格是由市場決定的。
 
 ((("exchange rates", "floating")))((("floating exchange rate")))像大多數其他貨幣一樣，比特幣具有浮動匯率，這意味著比特幣相對於任何其他貨幣的價值根據其交易市場的供求情況而變化。例如，比特幣的美元價格是根據最近比特幣和美元的交易計算出來的。因此，價格每秒鐘會出現幾次波動。定價服務將彙總來自多個市場的價格並計算代表貨幣對的廣泛市場匯率（例如BTC / USD）的成交量加權平均值。
 
@@ -188,7 +188,7 @@ http://bit.ly/cmebrr[Chicago Mercantile Exchange Bitcoin Reference Rate]:: 可�
 
 ((("getting started", "sending and receiving bitcoin", id="GSsend01")))((("spending bitcoin", "bitcoin wallet quick start example")))((("spending bitcoin", see="also transactions"))) Alice 決定兌換10美元的比特幣，以免在這項新技術上冒太多風險。她給了Joe 10美元現金，打開她的Mycelium錢包應用程式，並選擇Receive。這顯示了Alice的第一個比特幣地址的QR碼。
 
-Joe在他的智慧型手機錢包上選擇“Send”，然後看到包含兩個輸入的界面：
+Joe在他的智慧型手機錢包上選擇＂Send＂，然後看到包含兩個輸入的界面：
 
 * 目標比特幣地址
 * 要發送的數量，以BTC或者他的本地貨幣（USD）為單位。
@@ -204,11 +204,11 @@ image::images/mbc2_0102.png["airbitz mobile send screen"]
 
 然後Joe仔細檢查以確保他輸入了正確的金額，因為他即將轉賬，錯誤不可逆轉。在仔細檢查地址和金額後，他按下Send來傳輸交易。Joe的比特幣錢包構建了一筆交易，將0.10BTC發送到Alice的地址，從Joe的錢包中獲取資金並使用Joe的私鑰簽署交易。這告訴比特幣網路，喬已經授權將價值轉移給Alice的新地址。由於交易是通過點對點協議傳輸的，因此它可以快速傳播到比特幣網路。在不到一秒的時間內，網路中大多數連接良好的節點都會收到交易並首次查看Alice的地址。
 
-與此同時，Alice的錢包不斷“監聽”比特幣網路上的已發佈交易，尋找與她的錢包中的地址相匹配的任何交易。在Joe的錢包傳輸交易後幾秒鐘，Alice的錢包就會顯示它正在接收0.10BTC。
+與此同時，Alice的錢包不斷＂監聽＂比特幣網路上的已發佈交易，尋找與她的錢包中的地址相匹配的任何交易。在Joe的錢包傳輸交易後幾秒鐘，Alice的錢包就會顯示它正在接收0.10BTC。
 
 .確認
 ****
-((("getting started", "confirmations")))((("confirmations", "bitcoin wallet quick start example")))((("confirmations", see="also mining and consensus; transactions")))((("clearing", seealso="confirmations")))起初，Alice的地址將顯示Joe的交易為“未確認”。這意味著交易已經傳播到網路，但尚未記錄在比特幣交易賬本（即區塊鏈）中。要確認，交易必須包含在一個區塊中，並添加到區塊鏈中，平均每10分鐘發生一次。在傳統的財務術語中，這被稱為_清算_。有關比特幣交易的傳播，驗證和清算（確認）的更多詳細訊息，請參閱“採礦”。
+((("getting started", "confirmations")))((("confirmations", "bitcoin wallet quick start example")))((("confirmations", see="also mining and consensus; transactions")))((("clearing", seealso="confirmations")))起初，Alice的地址將顯示Joe的交易為＂未確認＂。這意味著交易已經傳播到網路，但尚未記錄在比特幣交易賬本（即區塊鏈）中。要確認，交易必須包含在一個區塊中，並添加到區塊鏈中，平均每10分鐘發生一次。在傳統的財務術語中，這被稱為_清算_。有關比特幣交易的傳播，驗證和清算（確認）的更多詳細訊息，請參閱＂採礦＂。
 ****
 
 Alice現在是那0.10BTC的所有者了。在下一章中，我們將看到她第一次使用比特幣購買東西，並更詳細地研究背後的交易和傳播技術。((("", startref="BCbasic01")))((("use cases", "buying coffee", startref="aliceone")))
