@@ -122,7 +122,7 @@ image::images/mbc2_0504.png[alt]
 .Trezor displaying one of the mnemonic words
 image::images/mbc2_0505.png["Trezor wallet display of mnemonic word"]
 
-記錄下助記詞，Gabriel可以在他的Trezor設備丟失或損壞時使用備份的助記詞進行恢復。這種助記符可以用於新的Trezor設備或任意一個兼容的軟體或硬體錢包。請注意，助記詞的順序很重要。
+記錄下助記詞，Gabriel可以在他的Trezor設備丟失或損壞時使用備份的助記詞進行恢復。這種助記詞可以用於新的Trezor設備或任意一個兼容的軟體或硬體錢包。請注意，助記詞的順序很重要。
 
 [[mnemonic_paper_backup]]
 .Gabriel's paper backup of the mnemonic
@@ -164,11 +164,11 @@ BIP-39定義了助記詞和種子的創建方法，我們通過九個步驟來�
 [[generating_mnemonic_words]]
 ===== 生成助記詞
 
-助記詞是由錢包使用BIP-39中定義的標準化過程自動生成的。錢包從一個熵源開始，添加校驗和，將熵映射到單詞列表：
+助記詞是由錢包使用BIP-39中定義的標準化過程自動生成的。錢包從一個熵源開始，添加校驗碼，將熵映射到單詞列表：
 
 1. 創建一個128到256位的隨機序列（熵）。
-2. 通過取其SHA256雜湊的第一個（熵長度/ 32）位創建隨機序列的校驗和。
-3. 將校驗和添加到隨機序列的末尾。
+2. 通過取其SHA256雜湊的第一個（熵長度/ 32）位創建隨機序列的校驗碼。
+3. 將校驗碼添加到隨機序列的末尾。
 4. 將結果拆分為11位長的多個段。
 5. 將每個11位值映射到有2048個單詞的預定義字典中的一個單詞。
 6. 助記詞就是這些單詞的序列。
@@ -195,7 +195,7 @@ image::images/mbc2_0506.png["Generating entropy and encoding as mnemonic words"]
 |=======
 
 [[mnemonic_to_seed]]
-===== 從助記符到種子
+===== 從助記詞到種子
 
 助記詞表示長度為128到256位的熵。然後使用熵通過使用密鑰擴展函數PBKDF2來匯出更長的（512位）種子。之後使用生成的種子構建確定性錢包並匯出其密鑰。
 
@@ -219,7 +219,7 @@ image::images/mbc2_0507.png["From mnemonic to seed"]
 
 [TIP]
 ====
-密鑰擴展方法及其2048輪雜湊是一種非常有效的防止對助記詞或密碼短語攻擊的保護。它使得嘗試超過幾千個密碼和助記符組合的成本非常高，而可能派生的種子數量很大（2^512^）。
+密鑰擴展方法及其2048輪雜湊是一種非常有效的防止對助記詞或密碼短語攻擊的保護。它使得嘗試超過幾千個密碼和助記詞組合的成本非常高，而可能派生的種子數量很大（2^512^）。
 ====
 
 表格 pass:[<a data-type="xref" href="#mnemonic_128_no_pass" data-xrefstyle="select: labelnumber">#mnemonic_128_no_pass</a>], pass:[<a data-type="xref" href="#mnemonic_128_w_pass" data-xrefstyle="select: labelnumber">#mnemonic_128_w_pass</a>], and pass:[<a data-type="xref" href="#mnemonic_256_no_pass" data-xrefstyle="select: labelnumber">#mnemonic_256_no_pass</a>] 顯示一些助記詞和他們產生的種子（沒有任何密碼）的例子。
@@ -293,7 +293,7 @@ https://github.com/bitcoinjs/bip39[bitcoinjs/bip39]:: BIP-39的JavaScript實現�
 
 https://github.com/libbitcoin/libbitcoin/blob/master/src/wallet/mnemonic.cpp[libbitcoin/mnemonic]:: BIP-39的C++實現，是流行的Libbitcoin框架的一部分。
 
-還有一個在網頁中實現的BIP-39生成器，這對於測試非常有用。 <<a_bip39_generator_as_a_standalone_web_page>> 展示了生成助記符，種子和擴展私鑰的網頁。
+還有一個在網頁中實現的BIP-39生成器，這對於測試非常有用。 <<a_bip39_generator_as_a_standalone_web_page>> 展示了生成助記詞，種子和擴展私鑰的網頁。
 
 [[a_bip39_generator_as_a_standalone_web_page]]
 .A BIP-39 generator as a standalone web page

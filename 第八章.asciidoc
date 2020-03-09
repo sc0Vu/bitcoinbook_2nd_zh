@@ -315,7 +315,7 @@ $ bitcoind --daemon --debug=tor
 
 BIP-150和BIP-151允許用戶使用加密和身份驗證來運行連接到可信完整節點的SPV客戶端，以保護SPV客戶端的隱私。
 
-此外，身份驗證可用於創建可信的比特幣節點網路並防止中間人攻擊（Man-in-the-Middle attacks）。最後，如果廣泛部署P2P加密，將會加強比特幣對流量分析和隱私侵蝕監控的阻力，特別是在互聯網使用受到嚴格控制和監控的極權主義國家。
+此外，身份驗證可用於創建可信的比特幣節點網路並防止中間人攻擊（Man-in-the-Middle attacks）。最後，如果廣泛部署P2P加密，將會加強比特幣對流量分析和隱私侵蝕監控的阻力，特別是在網路使用受到嚴格控制和監控的極權主義國家。
 
 標準定義在 https://github.com/bitcoin/bips/blob/master/bip-0150.mediawiki[BIP-150 (Peer Authentication)] 和 https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki[BIP-151 (Peer-to-Peer Communication Encryption)] 中。
 
