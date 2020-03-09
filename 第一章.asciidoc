@@ -86,7 +86,7 @@ Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品
 ((("use cases", "import/export")))穆罕默德是迪拜的一家電子產品進口商。他試圖用比特幣從美國和中國購買電子產品進口到阿聯酋，以加快進口支付流程。 這個故事將展示如何將比特幣用於與實體商品相關的大型企業對企業國際支付。
 
 比特幣挖礦::
-((("use cases", "mining for bitcoin")))Jing是上海的電腦工程專業的學生。他已經建立了一個礦機，利用他的工程技能來挖掘比特幣，以獲取額外收入。 這個故事將研究比特幣的＂工業＂基礎：用於保護比特幣網路和發行新貨幣的專用設備。
+((("use cases", "mining for bitcoin")))Jing是上海的電腦工程專業的學生。他已經建立了一個礦機，利用他的工程技能來挖出比特幣，以獲取額外收入。 這個故事將研究比特幣的＂工業＂基礎：用於保護比特幣網路和發行新貨幣的專用設備。
 
 每一個故事都基於真實的人和真正的行業，目前正在使用比特幣來創建新的市場，新的行業以及針對全球經濟問題的創新解決方案。((("", startref="GSuses01")))
 
@@ -166,7 +166,7 @@ Alice現在準備開始使用她的新比特幣錢包了。((("", startref="GSqu
 ((("privacy, maintaining")))((("security", "maintaining privacy")))((("digital currencies", "currency exchanges")))((("currency exchanges")))((("digital currencies", "benefits of bitcoin")))((("bitcoin", "benefits of")))比特幣優於其他支付系統的一個優點是，如果使用得當，它可以為用戶提供更多的隱私。獲取，持有和支出比特幣並不要求你向第三方洩露敏感和個人身份訊息。但是，比特幣涉及諸如貨幣兌換等傳統系統時，國家和國際法規通常適用。為了以你的國家貨幣兌換比特幣，你通常需要提供身份證明和銀行訊息。用戶應該知道，一旦比特幣地址附加到身份，所有相關的比特幣交易也很容易識別和跟蹤。這是許多用戶選擇維護與他們的錢包不相關的專用交換賬戶的原因之一。
 ====
 
-Alice是被通過朋友介紹知道比特幣的，因此她可以輕鬆獲得她的第一個比特幣。接下來，我們將看看她如何從她的朋友Joe那購買比特幣，以及Joe如何將比特幣發送到她的錢包。
+Alice是被通過朋友介紹知道比特幣，因此她可以輕鬆獲得她的第一個比特幣。接下來，我們將看看她如何從她的朋友Joe那購買比特幣，以及Joe如何將比特幣發送到她的錢包。
 
 [[bitcoin_price]]
 ==== 查看比特幣的當前價格
@@ -208,7 +208,7 @@ image::images/mbc2_0102.png["airbitz mobile send screen"]
 
 .確認
 ****
-((("getting started", "confirmations")))((("confirmations", "bitcoin wallet quick start example")))((("confirmations", see="also mining and consensus; transactions")))((("clearing", seealso="confirmations")))起初，Alice的地址將顯示Joe的交易為＂未確認＂。這意味著交易已經傳播到網路，但尚未記錄在比特幣交易賬本（即區塊鏈）中。要確認，交易必須包含在一個區塊中，並添加到區塊鏈中，平均每10分鐘發生一次。在傳統的財務術語中，這被稱為_清算_。有關比特幣交易的傳播，驗證和清算（確認）的更多詳細訊息，請參閱＂採礦＂。
+((("getting started", "confirmations")))((("confirmations", "bitcoin wallet quick start example")))((("confirmations", see="also mining and consensus; transactions")))((("clearing", seealso="confirmations")))起初，Alice的地址將顯示Joe的交易為＂未確認＂。這意味著交易已經傳播到網路，但尚未記錄在比特幣交易賬本（即區塊鏈）中。要確認，交易必須包含在一個區塊中，並添加到區塊鏈中，平均每10分鐘發生一次。在傳統的財務術語中，這被稱為_清算_。有關比特幣交易的傳播、驗證和清算（確認）的更多詳細訊息，請參閱＂挖礦＂。
 ****
 
 Alice現在是那0.10BTC的所有者了。在下一章中，我們將看到她第一次使用比特幣購買東西，並更詳細地研究背後的交易和傳播技術。((("", startref="BCbasic01")))((("use cases", "buying coffee", startref="aliceone")))
