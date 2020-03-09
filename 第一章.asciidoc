@@ -134,7 +134,7 @@ Carol是舊金山的藝術畫廊老闆。她使用比特幣出售昂貴的作品
 .The Mycelium Mobile Wallet
 image::images/mbc2_0101.png["MyceliumWelcome"]
 
-((("addresses", "bitcoin wallet quick start example")))((("QR codes", "bitcoin wallet quick start example")))((("addresses", see="also keys and addresses"))) 界面上最重要的部分是Alice的_比特幣地址（bitcoin adreess）_，是數字和字母的組合: +1Cdid9KFAaatwczBwBttQcwXYCpvK8h7FK+. 比特幣地址旁邊是存有相同訊息的二維碼，條形碼，可以通過手機掃描。Alice可以通過點擊二維碼或Receive按鈕保存比特幣地址，或將二維碼保存到手機中。在大多數錢包中，二維碼可以點擊放大，更方便掃描。
+((("addresses", "bitcoin wallet quick start example")))((("QR codes", "bitcoin wallet quick start example")))((("addresses", see="also keys and addresses"))) 界面上最重要的部分是Alice的_比特幣地址（bitcoin adreess）_，是數字和字母的組合: +1Cdid9KFAaatwczBwBttQcwXYCpvK8h7FK+. 比特幣地址旁邊是存有相同訊息的二維碼、條形碼，可以通過手機掃描。Alice可以通過點擊二維碼或Receive按鈕保存比特幣地址或將二維碼保存到手機中。在大多數錢包中，二維碼可以點擊放大更方便掃描。
 
 [TIP]
 ====
@@ -150,7 +150,7 @@ Alice現在準備開始使用她的新比特幣錢包了。((("", startref="GSqu
 
 ((("getting started", "acquiring bitcoin")))新用戶的第一個也是最困難的任務是購買一些比特幣。與其他外幣不同，你還不能在銀行或外匯交易市場購買比特幣。
 
-比特幣交易是不可逆轉的。大多數電子支付網路如信用卡，借記卡，PayPal和銀行賬戶轉賬都是可逆的。對於銷售比特幣的人來說，這種差異帶來了非常高的風險，即買家在收到比特幣後會逆轉電子支付，實際上欺騙了賣家。為了緩解這種風險，接受傳統電子支付以換取比特幣的公司通常要求買家進行身份驗證和信用評估檢查，這可能需要幾天或幾周的時間。作為新用戶，這意味著你無法使用信用卡立即購買比特幣。然而，用一點耐心和創造性思維，你就不需要這樣。
+比特幣交易是不可逆轉的。大多數電子支付網路如信用卡、借記卡、PayPal和銀行賬戶轉賬都是可逆的。對於銷售比特幣的人來說，這種差異帶來了非常高的風險，即買家在收到比特幣後會逆轉電子支付，實際上欺騙了賣家。為了緩解這種風險，接受傳統電子支付以換取比特幣的公司通常要求買家進行身份驗證和信用評估檢查，這可能需要幾天或幾周的時間。作為新用戶，這意味著你無法使用信用卡立即購買比特幣。然而，用一點耐心和創造性思維，你就不需要這樣。
 
 [role="pagebreak-before"]
 以下是新用戶獲取比特幣的一些方法:
