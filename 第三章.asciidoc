@@ -664,9 +664,9 @@ $ bitcoin-cli getblock 0000000000000001b6b9a13b095e96db41c4a928b97ef2d944a9b3&#x
 
 ==== 使用Bitcoin Core的編程接口
 
-((("Bitcoin Core", "Bitcoin Core API", "using programmatic interface")))((("programmatic interface", id="progint03")))+bitcoin-cli+ 助手對於探索比特幣核心API和測試功能非常有用。但API的重要功能是以編程方式訪問。在本節中，我們將演示如何通過另一個程序訪問比特幣核心。
+((("Bitcoin Core", "Bitcoin Core API", "using programmatic interface")))((("programmatic interface", id="progint03")))+bitcoin-cli+ 助手對於探索Bitcoin Core API和測試功能非常有用。但API的重要功能是以編程方式訪問。在本節中，我們將演示如何通過另一個程序訪問Bitcoin Core。
 
-Bitcoin Core的API是JSON-RPC接口. JSON代表JavaScript Object Notation，是一種非常方便人類和程序閱讀的數據格式。RPC代表遠程過程調用，這意味著我們通過網路協議調用遠程（在比特幣核心節點上的）函數。在這種情況下，網路協議是HTTP或HTTPS（用於加密連接）。
+Bitcoin Core的API是JSON-RPC接口. JSON代表JavaScript Object Notation，是一種非常方便人類和程序閱讀的數據格式。RPC代表遠程過程調用，這意味著我們通過網路協議調用遠程（在Bitcoin Core節點上的）函數。在這種情況下，網路協議是HTTP或HTTPS（用於加密連接）。
 
 當我們使用 +bitcoin-cli+ 命令獲取命令幫助時，它向我們展示了使用 +curl+（常用的命令行HTTP客戶端）構造JSON-RPC調用的示例：
 
@@ -680,7 +680,7 @@ $ curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "met
 
 你可以正在自己的程序中使用HTTP庫來實現JSON-RPC調用，類似於前面的 +curl+ 示例。
 
-然而，大多數程式語言都有一些＂包裝＂了比特幣核心API的庫，簡便很多。我們將使用 +python-bitcoinlib+ 庫來簡化API訪問。你需要有一個正在運行的Bitcoin Core實例，用於進行JSON-RPC調用。
+然而，大多數程式語言都有一些＂包裝＂了Bitcoin Core API的庫，簡便很多。我們將使用 +python-bitcoinlib+ 庫來簡化API訪問。你需要有一個正在運行的Bitcoin Core實例，用於進行JSON-RPC調用。
 
 <<rpc_example>> 中的Python腳本調用 +getblockchaininfo+ 並打印返回數據中的區塊個數。
 

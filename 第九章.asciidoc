@@ -280,7 +280,7 @@ Testnet是用於測試目的的測試區塊鏈，網路和貨幣的名稱。測�
 
 ===== 使用測試網
 
-像幾乎所有其他比特幣軟體一樣，Bitcoin Core完全支援在testnet而不是mainnet上運行。比特幣核心的所有功能都在測試網路上運行，包括錢包，開採測試網的幣，以及同步完整的測試網節點。
+像幾乎所有其他比特幣軟體一樣，Bitcoin Core完全支援在testnet而不是mainnet上運行。Bitcoin Core的所有功能都在測試網路上運行，包括錢包，開採測試網的幣，以及同步完整的測試網節點。
 
 要在測試網上啟動 Bitcoin Core，使用 +testnet+ 選項：
 
@@ -319,7 +319,7 @@ $ bitcoin-cli -testnet getblockchaininfo
 
 ==== Segnet —— 隔離見證測試網
 
-2016年啟動了一個特殊用途的測試網，幫助開發和測試隔離見證（又名segwit；見 <<segwit>>）。該測試區塊鏈被稱為 +segnet+，可以通過運行比特幣核心的特殊版本（分支）加入。
+2016年啟動了一個特殊用途的測試網，幫助開發和測試隔離見證（又名segwit；見 <<segwit>>）。該測試區塊鏈被稱為 +segnet+，可以通過運行Bitcoin Core的特殊版本（分支）加入。
 
 由於segwit已添加到testnet3，因此不再需要使用segnet來測試segwit功能。
 
@@ -327,7 +327,7 @@ $ bitcoin-cli -testnet getblockchaininfo
 
 ==== Regtest —— 本地區塊鏈
 
-Regtest代表＂迴歸測試＂，它是一種比特幣核心功能，允許你為測試目的創建本地區塊鏈。與公共測試區塊鏈testnet3不同，regtest區塊鏈旨在作為封閉系統運行以進行本地測試。你從零開始啟動一個regtest區塊鏈，創建一個本地創世區塊。你可以將其他節點添加到網路，或者僅使用單個節點運行它來測試比特幣核心軟體。
+Regtest代表＂迴歸測試＂，它是一種Bitcoin Core功能，允許你為測試目的創建本地區塊鏈。與公共測試區塊鏈testnet3不同，regtest區塊鏈旨在作為封閉系統運行以進行本地測試。你從零開始啟動一個regtest區塊鏈，創建一個本地創世區塊。你可以將其他節點添加到網路，或者僅使用單個節點運行它來測試Bitcoin Core軟體。
 
 要以 regtest 模式啟動 Bitcoin Core，使用 +regtest+ 選項：
 
