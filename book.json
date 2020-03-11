@@ -30,15 +30,12 @@
     },
     "plugins": [
         "ga",
-        "mathjax",
-        "github"
+        "mathjax"
     ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-131051587-3"
-        },
-        "github": {
-            "url": "https://github.com/cypherpunks-core/bitcoinbook_2nd_zh"
+        }
         }
     },
     "title" : "Mastering Bitcoin 2nd Edition - 繁中",
