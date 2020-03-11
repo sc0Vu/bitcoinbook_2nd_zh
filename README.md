@@ -1,6 +1,5 @@
 # Mastering Bitcoin 2nd Edition - 繁中
 
-[![](https://travis-ci.org/cypherpunks-core/bitcoinbook_2nd_zh.svg?branch=master)](https://travis-ci.org/cypherpunks-core/bitcoinbook_2nd_zh)
 ![](https://img.shields.io/badge/Language-Traditional%20Chinese-orange.svg)
 ![https://github.com/aantonop](https://img.shields.io/badge/Author-aantonop-yellowgreen.svg)
  
