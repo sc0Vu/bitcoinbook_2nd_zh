@@ -1,7 +1,5 @@
 # Mastering Bitcoin 2nd Edition - 繁中
- 
-![https://github.com/aantonop](https://img.shields.io/badge/Author-aantonop-yellowgreen.svg)
- 
+
 本書主要面向開發人員，前兩章對比特幣的介紹也適用於非開發人員。任何對技術有基本瞭解的人都可以閱讀前兩章，以深入瞭解比特幣。
 
 <center>
